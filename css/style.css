@@ -821,6 +821,9 @@ html[dir="ltr"] .about-us-section:before{
 	max-width: 945px;
 	margin: 0 0 40px;
 }
+.counter-name-div{
+	height: 48px;
+}
 .counter-section {
 	display: flex;
 	justify-content: center;
@@ -1150,6 +1153,26 @@ background-color: #eef4f8;
 .inner-page .about-us-section::before{
 	content:url(../images/shape-2.png);
 }
+.about-us-image{
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+.inner-page .about-us-title{
+	color: var(--main-hover);
+}
+.inner-page .about-us-paragraph{
+	color: var(--main-hover);
+	margin-bottom: 65px;
+}
+.inner-page .counter-number{
+	color: var(--main-hover);
+}
+.inner-page .counter-name{
+	color: var(--main-hover);
+}
+.inner-page .counter-section{
+	margin-bottom: 118px;
+}
 
 /* footer */
 .footer {
@@ -1328,6 +1351,16 @@ html[dir="ltr"] .footer:before{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.about-us-image{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.inner-page .about-us-paragraph{
+	margin-bottom: 30px;
+}
+.inner-page .counter-section{
+	margin-bottom: 0px;
 }
 .breadcrumb {
 	display: none;
@@ -2076,6 +2109,9 @@ html[dir="ltr"] .about-us-section:before{
 	.services-grid{
 		grid-template-columns: repeat(2,1fr);
 		grid-gap: 15px;
+	}
+	.inner-page .counter-section{
+		margin-bottom: 50px;
 	}
 
 	.footer-nav-bar{
