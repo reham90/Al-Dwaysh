@@ -1230,6 +1230,206 @@ background-color: #eef4f8;
 .services-pagination li.active a{
 	color: #fff;
 }
+.careers-section{
+	padding: 70px 0 102px;
+}
+.careers-title{
+	color: var(--main-hover);
+	font-size: 28px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin:0 0 50px;
+	font-family: "IBMPlexSansArabic-Bold";
+}
+.careers-form-section{
+	max-width: 555px;
+	
+	margin: 0 auto;
+}
+.form-label{
+	font-size: 16px;
+	color: var(--main-hover);
+	font-family: "IBMPlexSansArabic-Medium";
+	text-align: start;
+	margin: 0 0 10px;
+	margin-inline-start: 30px;
+	text-transform: capitalize;
+}
+.required:after{
+content:"*";
+color: #fd2121;
+}
+.form-input{
+	width: 504px;
+	height: 54px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 25px;
+	border:2px solid rgb(220, 231, 238);
+	transition: 0.5s;
+	padding: 0 20px;
+	outline: none;
+	margin: 0 0 17px;
+	position: relative;
+}
+.form-input:focus{
+	border: 2px solid var(--main-hover);
+}
+.checkbox-section{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 25px;
+	margin-inline-start: 30px;
+  }
+
+  .radio-btn-label{
+	margin-inline-start: 15px;
+	color: var(--main-hover);
+	font-size: 16px;
+	text-align: start;
+  }
+  .radio-button-block input{
+	width: 24px;
+	height: 24px;
+	border:2px solid rgb(220, 231, 238);
+	margin-bottom: 0px;
+	padding: 0;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	background-color: #fff;
+	flex-shrink: 0;
+	border-radius: 50%;
+	outline: none;
+  }
+  .radio-button-block input {
+	width: 24px;
+	height: 24px;
+	border:2px solid rgb(220, 231, 238);
+    margin-bottom: 0px;
+    padding: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    background-color: #fff;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+.checkbox input{
+ 
+  
+    background-color: #fff;
+    border: 2px solid rgb(220, 231, 238);
+    outline: none;
+  
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+   
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+  
+  
+
+  .radio-button-block input:checked::after{
+	content: " ";
+	width:12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: var(--main-color) ;
+	top:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	inset-inline-end: 50%;
+  }
+  html[dir="ltr"]   .radio-button-block input:checked::after{
+	inset-inline-end: -6%;
+  }
+
+  .checkbox{
+	display: flex;
+	margin-bottom: 14px;
+	align-items: inherit;
+  }
+  .radio-button-block .checkbox{
+	margin-bottom: 0;
+
+  }
+  .checkbox-block{
+	
+	width: 227px;
+  }
+  .upload__btn {
+	
+	  overflow: hidden;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+  }
+  .upload-file{
+	width: 100px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: rgb(220, 231, 238);
+	color: rgb(98, 120, 134);
+  font-size: 12px;
+  font-family: "IBMPlexSansArabic-Medium";
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  inset-inline-end: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  }
+  .upload__inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+  }
+  .submit-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:25px auto 0;
+	background-color: var(--main-color);
+	color: #fff;
+	width: 156px;
+	height: 50px;
+	border-radius: 25px;
+border:0;
+outline: none;
+font-size: 16px;
+font-family: "IBMPlexSansArabic-Bold";
+transition: 0.5s;
+  }
+  .submit-btn:focus{
+	border: 0;
+	outline: none;
+  }
+  .submit-btn:hover{
+	background-color: var(--main-hover);
+  }
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 /* footer */
 .footer {
@@ -1408,6 +1608,18 @@ html[dir="ltr"] .footer:before{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.careers-form-section{
+	max-width: 100%;
+}
+.form-input{
+	width: 100%;
+}
+.careers-section{
+	padding: 0 0 50px;
+}
+.careers-title{
+	font-size: 24px;
 }
 .top-header{
 	padding: 0 20px;
