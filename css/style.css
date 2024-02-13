@@ -780,7 +780,7 @@ html[dir="ltr"] .first-level-link:after {
 	background-size: cover;
 	min-height: 613px;
 	position: relative;
-	background-position:  100%;
+	/* background-position:  100%; */
 }
 .about-us-section:before{
 	content: url(../images/shape.png);
@@ -1515,6 +1515,91 @@ html[dir="ltr"] .date{
 	margin: 0 0 30px;
 	
 }
+.faq-section{
+	padding: 79px 0 97px;
+}
+.faq-content{
+	margin: 0 auto;
+	width: 945px;
+}
+
+  
+  .accordion .accordion__title {
+	display: block;
+	border-top: 1px solid rgb(230, 230, 230);
+	border-bottom: 1px solid rgb(230, 230, 230);
+	font-size: 18px;
+	font-family: "IBMPlexSansArabic-SemiBold";
+	padding: 30px 0;
+	color: var(--main-hover);
+	display: flex;
+	transition: all 0.25s ease;
+	cursor: pointer;
+	position: relative;
+	padding-inline-end: 20px;
+  }
+.faq-number{
+	font-size: 18px;
+	color: rgb(179, 179, 179);
+	
+	display: flex;
+	margin-inline-end: 24px;
+  }
+  .accordion .accordion__title:has(input:checked) .faq-number{
+	color: var(--main-color);
+  }
+  .accordion .accordion__title:has(input:checked) {
+	color: var(--main-color);
+	border-bottom: 0;
+	padding-bottom: 22px;
+  }
+  .accordion .accordion__title input {
+	appearance: none;
+  }
+  
+  .accordion .accordion__title:after {
+	font: var(--fa-font-regular);
+	font-size: 24px;
+	content: "\2b";
+	position: absolute;
+	inset-inline-end: 0;
+	color: rgb(179, 179, 179);
+  }
+  
+  .accordion .accordion__title:has(input:checked):after {
+	font: var(--fa-font-regular);
+	font-size: 24px;
+	content: "\f068";
+	position: absolute;
+	inset-inline-end: 0;
+	color: var(--main-color);
+  }
+  
+  .accordion .accordion__text {
+	overflow: hidden;
+	max-height: 0;
+	
+	transition: all .5s ease-in-out;
+	
+  }
+  
+  .faq-answer {
+	
+	padding: 0;
+	padding-inline-start: 47px;
+	color: var(--main-hover);
+	font-size: 16px;
+	font-family: "IBMPlexSansArabic-Light";
+	line-height: 2;
+	text-align: justify;
+	padding-bottom: 15px;
+  }
+  
+ 
+  
+  .accordion .accordion__title:has(input:checked) + .accordion__text {
+	max-height: 200px;
+  }
   
 
 
@@ -1697,6 +1782,25 @@ html[dir="ltr"] .footer:before{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.faq-section{
+	padding: 0 0 50px;
+}
+.faq-content{
+	width: 100%;
+}
+.accordion .accordion__title{
+	font-size: 16px;
+	padding-inline-end: 20px;
+}
+.faq-number{
+	margin-inline-end: 15px;
+}
+.accordion .accordion__title:has(input:checked){
+	padding-bottom: 15px;
+}
+.faq-answer{
+	padding-inline-start: 36px;
 }
 .terms-conditions-section{
 	padding: 0 0 50px;
