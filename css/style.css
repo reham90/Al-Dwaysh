@@ -1828,7 +1828,10 @@ html[dir="ltr"] .footer:before{
 	font-size: 16px;
 	white-space: nowrap;
 }
-
+.height-auto{
+	height: auto;
+	min-height: max-content;
+}
 
 
 
@@ -1940,6 +1943,15 @@ html[dir="ltr"] .footer:before{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.notification-account-word{
+	display: none;
+}
+.not{
+	display: none;
+}
+.dropbtn .guest-link{
+	display: none;
 }
 html[dir="ltr"] .forget-password-link{
 	margin-inline-start: 0;
@@ -2072,7 +2084,7 @@ html[dir="ltr"] .forget-password-link{
 align-items: center;
 justify-content: flex-end;
 width: 100%;
-margin-inline-end: 10px;
+/* margin-inline-end: 10px; */
 }
 .footer-caption{
 	padding-top: 50px;
