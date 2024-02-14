@@ -1284,7 +1284,7 @@ color: #fd2121;
 	position: relative;
 }
 .form-input:focus{
-	border: 2px solid var(--main-hover);
+	border: 2px solid var(--main-color);
 }
 .checkbox-section{
 	display: flex;
@@ -1678,6 +1678,83 @@ html[dir="ltr"] .date{
 .contact-us-form .submit-btn{
 	margin: 4px 0 0;
 }
+.sign-in-title{
+	color: var(--main-hover);
+	font-size: 18px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 40px;
+}
+.register-link{
+	color: var(--main-color);
+	font-size: 18px;
+	transition: 0.5s;
+	text-decoration: none;
+	margin-inline-start: 3px;
+}
+.register-link:hover{
+	color: var(--main-hover);
+	text-decoration: none;
+}
+.forget-password-bar{
+	display: flex;
+	
+	margin-bottom: 26px;
+	margin-inline-start: 27px;
+}
+.checkbox{
+	display: flex;
+  
+    align-items: inherit;
+}
+.checkbox input{
+	
+	width: 24px;
+	height: 24px;
+	border-radius: 2px;
+		border: 0;
+		margin-bottom: 0px;
+		padding: 0;
+		
+		background-color: #fff;
+		flex-shrink: 0;
+		margin-inline-end: 5px;
+	
+}
+.checkbox input:checked::after {
+	font: var(--fa-font-regular);
+    content: "\f00c";
+    font-size: 16px;
+    color: var(--main-color);
+    display: flex;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid var(--main-color);
+	border-radius: 2px;
+}
+.forget-password-link{
+	color: var(--main-hover);
+	transition: 0.5s;
+	font-size: 16px;
+	text-decoration: none;
+	margin-inline-start: 250px;
+	
+}
+.forget-password-link:hover{
+	color: var(--main-color);
+}
+html[dir="ltr"] .forget-password-link{
+	margin-inline-start: 150px;
+}
+.sign-in-btn{
+	width: 500px;
+	margin: 0 ;
+}
+  
 
 
   
@@ -1746,7 +1823,11 @@ html[dir="ltr"] .footer:before{
 .footer .big-menu li:last-child{
 	margin-inline-end: 0;
 }
-
+.remember-me{
+	color: var(--main-hover);
+	font-size: 16px;
+	white-space: nowrap;
+}
 
 
 
@@ -1859,6 +1940,18 @@ html[dir="ltr"] .footer:before{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+html[dir="ltr"] .forget-password-link{
+	margin-inline-start: 0;
+}
+.forget-password-bar{
+	justify-content: space-between;
+}
+.forget-password-link{
+	margin-inline-start: 0;
+}
+.sign-in-btn{
+	width: 100%;
 }
 .contact-us-section{
 	padding: 0 0 50px;
