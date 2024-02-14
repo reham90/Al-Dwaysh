@@ -1253,7 +1253,8 @@ background-color: #eef4f8;
 }
 .careers-form-section{
 	max-width: 555px;
-	
+	display: flex;
+    justify-content: center;
 	margin: 0 auto;
 }
 .form-label{
@@ -1753,6 +1754,10 @@ html[dir="ltr"] .forget-password-link{
 .sign-in-btn{
 	width: 500px;
 	margin: 0 ;
+	text-decoration: none;
+}
+.sign-in-btn:hover{
+	color: #fff;
 }
   
 
@@ -2169,10 +2174,18 @@ html[dir="ltr"] .about-us-section:before{
 	opacity: 1;
 }
 	.fixed-nav .menu-item-has-children a:hover {
-		color: var(--main-hover) !important;
+		color: #fff!important;
 	}
 .menu-item-has-children a:hover{
-	color: var(--main-hover) !important;
+	color: #fff !important;
+}
+.sub-menu li a:hover{
+	background-color: transparent;
+	border: 0;
+}
+.sub-menu li a{
+	border: 0;
+	padding: 8px 13px;
 }
 .nav-header li a:hover{
 	color: var(--main-hover);
@@ -2299,7 +2312,7 @@ html[dir="ltr"] .about-us-section:before{
 		opacity: 0;
 		visibility: hidden;
 		clip-path: circle(10.9% at 16% 16%);
-		background-color: rgba(255, 255, 255, 0.99);
+		background-color: var(--main-hover);
 		transition: 0.4s;
 		z-index: 8;
 		overflow-y: auto;
@@ -2552,7 +2565,7 @@ html[dir="ltr"] .about-us-section:before{
 	}
 
 	.show-icons .menu-bars .times {
-		color: var(--main-color);
+		color: #fff;
 	}
 
 	.nav-header li a {
@@ -2572,7 +2585,7 @@ html[dir="ltr"] .about-us-section:before{
 
 	.sub-menu li a {
 		font-size: 14px;
-		margin-inline-start: 5px;
+		margin-inline-start: 0;
 		font-family: "IBMPlexSansArabic-Regular";
 	}
 
@@ -2666,7 +2679,7 @@ html[dir="ltr"] .about-us-section:before{
 	}
 
 	.nav-header li a {
-		color: var(--main-color);
+		color: #fff;
 	}
 
 	.about-section {
