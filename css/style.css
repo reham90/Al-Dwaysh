@@ -1601,6 +1601,83 @@ html[dir="ltr"] .date{
 	max-height: 200px;
   }
   
+.contact-us-section{
+	padding: 77px 0 120px;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-us-text{
+	width: 457px;
+}
+.mb-24{
+	margin-bottom: 24px;
+}
+.contact-us-form{
+	width: 654px;
+	background-color: #e4ecf2;
+	border-radius: 20px;
+	padding: 40px 30px;
+}
+.contact-us-section .careers-title{
+	text-align: start;
+	line-height: 1.429;
+}
+.contact-us-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 24px;
+}
+.contact-us-list li{
+	display: flex;
+	font-size: 16px;
+	color: var(--main-hover);
+	margin-bottom: 15px;
+	line-height: 1.875;
+	max-width: 407px;
+}
+.contact-us-list li:last-child{
+	margin-bottom: 0;
+}
+.contact-us-list li b span{
+	font-weight: normal;
+	margin-inline-start: 3px;
+}
+.contact-us-icon{
+	font-size: 24px;
+	color: var(--main-color);
+	margin-inline-end: 20px;
+}
+.contact-us-text .social-icon {
+	background-color: var(--main-color);
+	
+}
+.contact-us-text .social-list-link a:hover .social-icon {
+	background-color: var(--main-hover);
+	
+}
+.contact-form-row{
+	display: flex;
+	margin-bottom: 16px;
+	justify-content: space-between;
+}
+.contact-form-input .form-input{
+	width: 292px ;
+	margin-bottom: 0;
+}
+.form-textarea{
+	width: 594px;
+	height: 104px;
+	border-radius: 25px;
+	padding: 15px;
+}
+.contact-us-form .submit-button{
+	display: flex;
+	justify-content: flex-end;
+}
+.contact-us-form .submit-btn{
+	margin: 4px 0 0;
+}
 
 
   
@@ -1782,6 +1859,32 @@ html[dir="ltr"] .footer:before{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.contact-us-section{
+	padding: 0 0 50px;
+	flex-wrap: wrap;
+}
+.contact-us-text{
+	width: 100%;
+}
+.contact-us-list li{
+	max-width: 100%;
+}
+.contact-us-form{
+	width: 100%;
+	margin-top: 50px;
+	padding: 20px;
+}
+.contact-form-row{
+	flex-wrap: wrap;
+	margin-bottom: 0;
+}
+.contact-form-input{
+	margin-bottom: 20px;
+	width: 100%;
+}
+.contact-form-input .form-input{
+	width: 100%;
 }
 .faq-section{
 	padding: 0 0 50px;
@@ -2610,6 +2713,12 @@ html[dir="ltr"] .about-us-section:before{
     justify-content: flex-end;
     width: 100%;
     margin-inline-end: 20px;
+	}
+	.contact-us-section{
+		flex-wrap: nowrap;
+	}
+	.contact-us-form{
+		margin-top: 0;
 	}
 	.services-grid{
 		grid-template-columns: repeat(2,1fr);
