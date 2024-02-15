@@ -1053,11 +1053,11 @@ background-color: #eef4f8;
 }
 
 .partners-slider .swiper-pagination .swiper-pagination-bullet:hover {
-	background-color: #fff;
+	background-color: var(--main-color);
 }
 
 .partners-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-	background-color: #fff;
+	background-color: var(--main-color);
 	opacity: 1;
 }
 
@@ -1425,6 +1425,7 @@ outline: none;
 font-size: 16px;
 font-family: "IBMPlexSansArabic-Bold";
 transition: 0.5s;
+text-decoration: none;
   }
   .submit-btn:focus{
 	border: 0;
@@ -1432,6 +1433,7 @@ transition: 0.5s;
   }
   .submit-btn:hover{
 	background-color: var(--main-hover);
+	color: #fff;
   }
   /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -1767,6 +1769,33 @@ html[dir="ltr"] .forget-password-link{
 .sign-in-btn:hover{
 	color: #fff;
 }
+.password-block{
+	position: relative;
+}
+.password-block button{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	inset-inline-end: 30px;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	outline: none;
+}
+.password-block button:focus{
+	outline: none;
+}
+.password-icon{
+	
+	color: rgb(149, 163, 179);
+	font-size: 16px;
+}
+#eye{
+	display: none;
+}
+#eye2{
+	display: none;
+}
   
 
 
@@ -1845,8 +1874,28 @@ html[dir="ltr"] .footer:before{
 	height: auto;
 	min-height: max-content;
 }
-
-
+.success-img{
+	margin: 0 auto 25px;
+	display: flex;
+	justify-content: center;
+}
+.sign-in-success-title{
+	color: var(--main-hover);
+	font-size: 22px;
+	text-align: center;
+	display: flex;
+	font-family: "IBMPlexSansArabic-Bold";
+	margin: 0 0 17px;
+	justify-content: center;
+}
+.success-text{
+	color: var(--main-hover);
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 9px;
+	text-align: center;
+}
 
 
 
@@ -2277,6 +2326,7 @@ html[dir="ltr"] .about-us-section:before{
 	.counter-section {
 		flex-wrap: wrap;
 		gap:15px;
+		margin-bottom: 0;
 	}
 	.countt{
 		display: flex;

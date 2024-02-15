@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Othman bin Ahmed Al-Dawish Company/sign in</title>
+    <title>Othman bin Ahmed Al-Dawish Company/register</title>
     <link rel="icon" href="images/fav.png" type="image/png" />
     
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -152,7 +152,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="sign-in.html">العربية</a>
+                  <a href="sign-in-success.html">العربية</a>
                 </li>
               </ul>
             
@@ -304,7 +304,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="sign-in.html">العربية</a>
+                  <a href="sign-in-success.html">العربية</a>
                 </li>
               </ul>
             
@@ -353,61 +353,38 @@
 
      <!-- breadcrumb -->
      <div class="breadcrumb-section">
-      <h2 class="breadcrumb-head">sign in</h2>
+      <h2 class="breadcrumb-head">register</h2>
       <ol class="breadcrumb">
         <li class="item-home">
           <a class="bread-link bread-home " href="index-en.html">home</a>
         </li>
       
         <li class="active item-23">
-          <span class="bread-current">sign in</span>
+          <span class="bread-current">register</span>
         </li>
       </ol>
     </div>
     <!-- end breadcrumb -->
     <!-- about-section -->
-    <div class="about-us-section">
+    <div class="about-us-section height-auto">
       <div class="container">
-        
         <div class="careers-section">
-          <h2 class="sign-in-title">
-            Don't have an account?
-           <a href="#" class="register-link">
-           register now
-           </a>
+          <img class="success-img" src="images/success.png" alt="success sign in">
+          <h2 class="sign-in-success-title">
+            Your account has been registered successfully
           </h2>
-          <div class="careers-form-section">
-            <form class="careers-form">
-             
-              <label class="form-label ">
-               email
-                </label>
-                <input type="email" class="form-input" required>
-             
-            
-             
-                <label class="form-label">
-                 password
-                  </label>
-                  <input type="password" class="form-input">
-                  
-                   <div class="forget-password-bar">
-                    <div class="checkbox">
-                      <input type="checkbox" id="remember" class="input-radio-btn" name="remember" value="">
-                      <label for="remember" class="remember-me"> remember me</label>
-                   </div>
-                   <a href="forget-password-en.html" class="forget-password-link">
-                    forget your password?
-                   </a>
-                   </div>
-                     
-                       
-                           <button type="submit" class="submit-btn sign-in-btn">
-                                 sign in
-                           </button>
-            </form>
-          </div>
+    <p class="success-text">
+      Thank you for choosing Othman Ahmed Al-Dawish Law Firm and Legal Consultations
+    </p>
+    <p class="success-text">
+      You can now log in and start requesting legal advice
+    </p>
+    <a href="#" type="submit" class="submit-btn">
+      register
+</a>
         </div>
+
+
 
       </div>
     </div>
@@ -508,5 +485,40 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function togglePassword() {
+       
+    var x = document.getElementById("pass");
+    var eyeSlash = document.getElementById("eye-slash");
+    var eye = document.getElementById("eye");
+    if (x.type === "password") {
+      x.type = "text";
+      eyeSlash.style.display="none";
+      eye.style.display="block";
+
+    } else {
+      x.type = "password";
+      eyeSlash.style.display="block";
+      eye.style.display="none";
+    }
+  }
+
+  function togglePassword2() {
+       
+       var xx = document.getElementById("pass2");
+       var eyeSlashh = document.getElementById("eye-slash2");
+       var eyee = document.getElementById("eye2");
+       if (xx.type === "password") {
+         xx.type = "text";
+         eyeSlashh.style.display="none";
+         eyee.style.display="block";
+   
+       } else {
+         xx.type = "password";
+         eyeSlashh.style.display="block";
+         eyee.style.display="none";
+       }
+     }
+      </script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>شركة عثمان بن أحمد الدويش/هل نسيت كلمة المرور</title>
+    <title>شركة عثمان بن أحمد الدويش/تسجيل جديد</title>
     <link rel="icon" href="images/fav.png" type="image/png" />
     
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -152,7 +152,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="forget-password-en.html">English</a>
+                  <a href="sign-in-success-en.html">English</a>
                 </li>
               </ul>
             
@@ -304,7 +304,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="forget-password-en.html">English</a>
+                  <a href="sign-in-success-en.html">English</a>
                 </li>
               </ul>
             
@@ -354,14 +354,14 @@
 
     <!-- breadcrumb -->
     <div class="breadcrumb-section">
-      <h2 class="breadcrumb-head">هل نسيت كلمة المرور؟</h2>
+      <h2 class="breadcrumb-head">تسجيل جديد</h2>
       <ol class="breadcrumb">
         <li class="item-home">
           <a class="bread-link bread-home " href="index.html">الرئيسية</a>
         </li>
       
         <li class="active item-23">
-          <span class="bread-current">هل نسيت كلمة المرور؟</span>
+          <span class="bread-current">تسجيل جديد</span>
         </li>
       </ol>
     </div>
@@ -372,28 +372,19 @@
     <div class="about-us-section height-auto">
       <div class="container">
         <div class="careers-section">
-          <h2 class="sign-in-title">
-           ادخل بريدك الإلكتروني المسجل وسيصلك رابط لإستعادة كلمة المرور
-          
+          <img class="success-img" src="images/success.png" alt="success sign in">
+          <h2 class="sign-in-success-title">
+         تم تسجيل حسابك بنجاح
           </h2>
-          <div class="careers-form-section">
-            <form class="careers-form">
-             
-              <label class="form-label ">
-                البريد الإلكتروني
-                </label>
-                <input type="email" class="form-input" required>
-             
-            
-             
-               
-                     
-                       
-                           <a href="reset-password.html" type="submit" class="submit-btn sign-in-btn">
-                                 إرسال
-                           </a>
-            </form>
-          </div>
+    <p class="success-text">
+      شكرا لاختيارك شركة عثمان أحمد الدويش للمحاماة والاستشارات القانونية
+    </p>
+    <p class="success-text">
+      يمكنك الآن تسجيل الدخول والبدء بطلب إستشارة قانونية
+    </p>
+    <a href="#" type="submit" class="submit-btn">
+      تسجيل دخول
+</a>
         </div>
      
       </div>
@@ -494,5 +485,40 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function togglePassword() {
+       
+    var x = document.getElementById("pass");
+    var eyeSlash = document.getElementById("eye-slash");
+    var eye = document.getElementById("eye");
+    if (x.type === "password") {
+      x.type = "text";
+      eyeSlash.style.display="none";
+      eye.style.display="block";
+
+    } else {
+      x.type = "password";
+      eyeSlash.style.display="block";
+      eye.style.display="none";
+    }
+  }
+
+  function togglePassword2() {
+       
+       var xx = document.getElementById("pass2");
+       var eyeSlashh = document.getElementById("eye-slash2");
+       var eyee = document.getElementById("eye2");
+       if (xx.type === "password") {
+         xx.type = "text";
+         eyeSlashh.style.display="none";
+         eyee.style.display="block";
+   
+       } else {
+         xx.type = "password";
+         eyeSlashh.style.display="block";
+         eyee.style.display="none";
+       }
+     }
+      </script>
   </body>
 </html>
