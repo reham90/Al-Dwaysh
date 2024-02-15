@@ -1797,7 +1797,66 @@ html[dir="ltr"] .forget-password-link{
 	display: none;
 }
   
-
+.edit-account-section{
+	display: flex;
+	
+}
+.my-account-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 262px;
+	border-radius: 15px;
+	margin-inline-end: 30px;
+}
+.name{
+	background-color: var(--main-hover);
+	padding: 13px 18px;
+	font-size: 16px;
+	color: rgb(238, 244, 248);
+	border-radius: 15px 15px 0 0;
+}
+.my-account-link{
+	display: flex;
+	padding: 16px 5px;
+	color: var(--main-hover);
+	font-size: 16px;
+	background-color: rgb(229, 236, 244);
+	border-bottom: 1px solid rgb(207, 219, 232);
+}
+.my-account-link.active a {
+	color: var(--main-color);
+}
+.edit-account-section .careers-form-section{
+	margin: 0;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.margin-0{
+	margin: 0;
+}
+.my-account-link a{
+	color: var(--main-hover);
+	font-size: 16px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.my-account-link a:hover{
+	color: var(--main-color);
+}
+.my-account-icon{
+	color: rgb(149, 163, 179);
+	font-size: 16px;
+	margin-inline-end: 12px;
+	margin-inline-start: 10px;
+}
+.my-account-list .active .my-account-icon{
+	color: var(--main-color);
+}
+.my-account-link:last-child{
+	border-radius: 0 0 15px 15px;
+	border-bottom: 0;
+}
 
   
 
@@ -1887,6 +1946,12 @@ html[dir="ltr"] .footer:before{
 	font-family: "IBMPlexSansArabic-Bold";
 	margin: 0 0 17px;
 	justify-content: center;
+	
+}
+.edit-account-section .sign-in-success-title{
+	text-align: start !important;
+	justify-content: flex-start;
+	width: 100%;
 }
 .success-text{
 	color: var(--main-hover);
@@ -2006,6 +2071,23 @@ html[dir="ltr"] .footer:before{
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+.edit-account-section{
+	flex-wrap: wrap;
+	position: relative;
+}
+.my-account-list{
+	display: flex;
+    width: 100%;
+    overflow-x: scroll;
+	margin-inline-end: 0;
+	margin-bottom: 30px;
+}
+.name{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .checkbox-block {
     width: 50%;
 }
@@ -2013,6 +2095,10 @@ html[dir="ltr"] .footer:before{
 
 .notification-account-word{
 	display: none;
+}
+.my-account-link a{
+	margin-top: 45px;
+	white-space: nowrap;
 }
 .not{
 	display: none;
@@ -2167,6 +2253,7 @@ width: 100%;
 }
 .footer-nav-bar{
 	flex-wrap: wrap;
+	flex-direction: column;
 }
 .partners-slider .swiper-pagination{
 	display: flex;
@@ -2296,7 +2383,7 @@ html[dir="ltr"] .about-us-section:before{
 	  .footer .big-menu li{
 		margin-bottom: 15px;
 		margin-inline-end: 0;
-		text-align: start;
+		text-align: center;
 	  }
 	  .footer .big-menu li:last-child{
 		margin-bottom: 0;
@@ -2317,6 +2404,7 @@ html[dir="ltr"] .about-us-section:before{
 	.copy-right {
 		width: 100%;
 		text-align: center;
+		margin-bottom: 7px;
 	}
 
 	.footer{
@@ -2887,6 +2975,21 @@ html[dir="ltr"] .about-us-section:before{
 @media only screen and (max-width: 994px) and (min-width: 768px) {
 	.about-us-content{
 		min-height: auto;
+	}
+	.edit-account-section{
+		flex-wrap: nowrap;
+	}
+	.my-account-list{
+		display: block;
+		width: 262px;
+		margin-inline-end: 30px;
+		overflow-x: hidden;
+	}
+	.name{
+		position: relative;
+	}
+	.my-account-link a{
+		margin-top: 0;
 	}
 	.guest-ask-section{
 		display: flex;
