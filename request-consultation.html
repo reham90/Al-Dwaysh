@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>شركة عثمان بن أحمد الدويش/شركاؤنا</title>
+    <title>شركة عثمان بن أحمد الدويش/طلب استشارة</title>
     <link rel="icon" href="images/fav.png" type="image/png" />
     
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -152,7 +152,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="partners-en.html">English</a>
+                  <a href="request-consultation-en.html">English</a>
                 </li>
               </ul>
             
@@ -304,7 +304,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="partners-en.html">English</a>
+                  <a href="request-consultation-en.html">English</a>
                 </li>
               </ul>
             
@@ -354,14 +354,14 @@
 
     <!-- breadcrumb -->
     <div class="breadcrumb-section">
-      <h2 class="breadcrumb-head">شركاؤنا</h2>
+      <h2 class="breadcrumb-head">طلب استشارة</h2>
       <ol class="breadcrumb">
         <li class="item-home">
           <a class="bread-link bread-home " href="index.html">الرئيسية</a>
         </li>
       
         <li class="active item-23">
-          <span class="bread-current">شركاؤنا</span>
+          <span class="bread-current">طلب استشارة</span>
         </li>
       </ol>
     </div>
@@ -371,248 +371,136 @@
     <!-- about-section -->
     <div class="about-us-section">
       <div class="container">
-       <div class="partners-grid">
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/01.png" alt="partner img">
+        <div class="careers-section">
+          
+          <div class="careers-form-section">
+            <form class="careers-form">
+              <label class="form-label required">
+               نوع الطلب
+                </label>
+                <div class="checkbox-section ">
+                  <div class="radio-button-block checkbox-block">
+                     <div class=" radio-check">
+                        <input type="radio"   id="arbitration" name="ristrict" value="تحكيم" checked>
+                        <label class="radio-btn-label" for="arbitration"> تحكيم</label>
+                     </div>
+                  </div>
+                  <div class="radio-button-block checkbox-block">
+                     <div class=" radio-check">
+                        <input type="radio"  id="Issues"  name="ristrict" value="قضايا">
+                        <label class="radio-btn-label" for="Issues"> قضايا</label>
+                     </div>
+                  </div>
+               </div>
+              <label class="form-label required">
+               اسم العميل
+              </label>
+              <input type="text" class="form-input" required>
+              <label class="form-label required">
+                رقم الهوية
+                 </label>
+                 <input type="number" class="form-input" required>
+                 <label class="form-label required">
+                  رقم الجوال
+                   </label>
+                   <input type="number" class="form-input" required>
+                   <label class="form-label required">
+                    البريد الإلكتروني
+                    </label>
+                    <input type="email" class="form-input" required>
+                    <label class="form-label required">
+                      العنوان
+                       </label>
+                       <input type="text" class="form-input" required>
+             <label class="form-label required">
+             نوع القضية
+              </label>
+              <div class="select">
+                <select class="form-input ">
+               
+                  <option>
+                    اختر من القائمة
+                  </option>
+                  <option>
+                    اختر من القائمة
+                  </option>
+                  <option>
+                    اختر من القائمة
+                  </option>
+                  <option>
+                    اختر من القائمة
+                  </option>
+                  </select>
+              </div>
+              <label class="form-label required">
+               حالة القضية
+                 </label>
+                 <div class="checkbox-section ">
+                   <div class="radio-button-block checkbox-block">
+                      <div class=" radio-check">
+                         <input type="radio"   id="new" name="status" value="جديدة" checked>
+                         <label class="radio-btn-label" for="new"> جديدة</label>
+                      </div>
+                   </div>
+                   <div class="radio-button-block checkbox-block">
+                      <div class=" radio-check">
+                         <input type="radio"  id="existing"  name="status" value="قائمة">
+                         <label class="radio-btn-label" for="existing"> قائمة</label>
+                      </div>
+                   </div>
+                </div>
+            
+             
+                
+                 
+                    <label class="form-label required">
+                   المحكمة
+                       </label>
+                       <input type="text" class="form-input" required>
+                       <label class="form-label required">
+                      الطرف في القضية
+                         </label>
+                         <div class="select">
+                           <select class="form-input ">
+                          
+                             <option>
+                               اختر من القائمة
+                             </option>
+                             <option>
+                               اختر من القائمة
+                             </option>
+                             <option>
+                               اختر من القائمة
+                             </option>
+                             <option>
+                               اختر من القائمة
+                             </option>
+                             </select>
+                         </div>
+                         <label class="form-label required">
+                          ملخص القضية
+                            </label>
+                            <textarea class="form-input form-textarea w-100 textarea-text">ادخل وصف نصي لتفاصيل القضية</textarea>
+                         <label class="form-label required">
+                          مستندات القضية
+                            </label>
+                            <div class="upload__box">
+                              <div class="upload__btn-box">
+                                 <label class="form-input upload__btn " id="file" for="customFile">
+                                 
+                                 <b class="upload-file">إضافة ملف</b>
+                                 <input type="file"  class="upload__inputfile" id="customFile" >
+                                 </label>
+                              </div>
+                            
+                           </div>
+                           <button type="submit" class="submit-btn">
+                                  إرسال
+                           </button>
+            </form>
           </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/02.png" alt="partner img">
-          </div>
-        </a>
-        
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/03.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/04.png" alt="partner img">
-          </div>
-        </a>
-       
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/05.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/06.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/01.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/02.png" alt="partner img">
-          </div>
-        </a>
-        
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/03.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/04.png" alt="partner img">
-          </div>
-        </a>
-       
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/05.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/06.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/01.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/02.png" alt="partner img">
-          </div>
-        </a>
-        
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/03.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/04.png" alt="partner img">
-          </div>
-        </a>
-       
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/05.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/06.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/01.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/02.png" alt="partner img">
-          </div>
-        </a>
-        
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/03.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/04.png" alt="partner img">
-          </div>
-        </a>
-       
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/05.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/06.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/01.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/02.png" alt="partner img">
-          </div>
-        </a>
-        
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/03.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/04.png" alt="partner img">
-          </div>
-        </a>
-       
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/05.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/06.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/01.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/02.png" alt="partner img">
-          </div>
-        </a>
-        
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/03.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/04.png" alt="partner img">
-          </div>
-        </a>
-       
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/05.png" alt="partner img">
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="partner-img-block">
-            <img class=" img-fluid" src="images/partners/06.png" alt="partner img">
-          </div>
-        </a>
-
-       </div>
-       <ul class="services-pagination">
-        <li class="active">
-          <a href="#">
-            1
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            2
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            3
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            4
-          </a>
-        </li>
-       </ul>
-
+        </div>
+     
       </div>
     </div>
    

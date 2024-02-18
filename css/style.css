@@ -1283,10 +1283,33 @@ color: #fd2121;
 	outline: none;
 	margin: 0 0 17px;
 	position: relative;
+	color: rgb(128, 128, 128);
+	font-size: 16px;
 }
 .form-input:focus{
 	border: 2px solid var(--main-color);
 }
+select {
+	
+	-moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+  }
+  .select{
+	position: relative;
+  }
+  .select:after{
+	font: var(--fa-font-regular);
+	content:"\f107";
+	color: rgb(149, 163, 179);
+	font-size: 16px;
+	top:50%;
+	 
+	transform: translateY(-50%);
+	inset-inline-end: 30px;
+	position: absolute;
+  }
+
 .checkbox-section{
 	display: flex;
 	justify-content: flex-start;

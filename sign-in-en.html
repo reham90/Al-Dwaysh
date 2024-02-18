@@ -389,7 +389,15 @@
                 <label class="form-label">
                  password
                   </label>
-                  <input type="password" class="form-input">
+                  <div class="password-block">
+                    <input type="password" class="form-input"  id="pass">
+                    <a onclick="togglePassword()">
+                      <i class="fa-regular fa-eye-slash  password-icon" id="eye-slash" ></i>
+                      <i class=" fa-regular fa-eye password-icon" id="eye" ></i>
+                     
+                      </a>
+                   
+                   </div>
                   
                    <div class="forget-password-bar">
                     <div class="checkbox">
@@ -508,5 +516,23 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        function togglePassword() {
+       
+       var x = document.getElementById("pass");
+       var eyeSlash = document.getElementById("eye-slash");
+       var eye = document.getElementById("eye");
+       if (x.type === "password") {
+         x.type = "text";
+         eyeSlash.style.display="none";
+         eye.style.display="block";
+   
+       } else {
+         x.type = "password";
+         eyeSlash.style.display="block";
+         eye.style.display="none";
+       }
+     }
+    </script>
   </body>
 </html>
