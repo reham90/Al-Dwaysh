@@ -1764,7 +1764,7 @@ html[dir="ltr"] .date{
 		
 		background-color: #fff;
 		flex-shrink: 0;
-		margin-inline-end: 5px;
+		margin-inline-end: 10px;
 	
 }
 .radio-check{
@@ -1965,6 +1965,7 @@ html[dir="ltr"] .footer:before{
 	color: var(--main-hover);
 	font-size: 16px;
 	white-space: nowrap;
+	margin-bottom: 20px;
 }
 .height-auto{
 	height: auto;
