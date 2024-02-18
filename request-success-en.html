@@ -152,7 +152,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="request-consultation.html">العربية</a>
+                  <a href="request-success.html">العربية</a>
                 </li>
               </ul>
             
@@ -304,7 +304,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="request-consultation.html">العربية</a>
+                  <a href="request-success.html">العربية</a>
                 </li>
               </ul>
             
@@ -366,139 +366,31 @@
     </div>
     <!-- end breadcrumb -->
     <!-- about-section -->
-    <div class="about-us-section">
+    <div class="about-us-section height-auto">
       <div class="container">
         <div class="careers-section">
-      
-        <div class="careers-form-section">
-          <form class="careers-form">
-            <label class="form-label required">
-            order type
-              </label>
-              <div class="checkbox-section ">
-                <div class="radio-button-block checkbox-block">
-                   <div class=" radio-check">
-                      <input type="radio"   id="arbitration" name="ristrict" value="arbitration" checked>
-                      <label class="radio-btn-label" for="arbitration"> arbitration</label>
-                   </div>
-                </div>
-                <div class="radio-button-block checkbox-block">
-                   <div class=" radio-check">
-                      <input type="radio"  id="Issues"  name="ristrict" value="cases">
-                      <label class="radio-btn-label" for="Issues"> cases</label>
-                   </div>
-                </div>
-             </div>
-            <label class="form-label required">
-             client name
-            </label>
-            <input type="text" class="form-input" required>
-            <label class="form-label required">
-              ID number
-               </label>
-               <input type="number" class="form-input" required>
-               <label class="form-label required">
-                mobile number
-                 </label>
-                 <input type="number" class="form-input" required>
-                 <label class="form-label required">
-                  email
-                  </label>
-                  <input type="email" class="form-input" required>
-                  <label class="form-label required">
-                    address
-                     </label>
-                     <input type="text" class="form-input" required>
-           <label class="form-label required">
-           case type
-            </label>
-            <div class="select">
-              <select class="form-input ">
-             
-                <option>
-                 select from menu
-                </option>
-                <option>
-                  select from menu
-                </option>
-                <option>
-                  select from menu
-                </option>
-                <option>
-                  select from menu
-                </option>
-                </select>
-            </div>
-            <label class="form-label required">
-            case status
-               </label>
-               <div class="checkbox-section ">
-                 <div class="radio-button-block checkbox-block">
-                    <div class=" radio-check">
-                       <input type="radio"   id="new" name="status" value="new" checked>
-                       <label class="radio-btn-label" for="new"> new</label>
-                    </div>
-                 </div>
-                 <div class="radio-button-block checkbox-block">
-                    <div class=" radio-check">
-                       <input type="radio"  id="existing"  name="status" value="existing">
-                       <label class="radio-btn-label" for="existing"> existing</label>
-                    </div>
-                 </div>
-              </div>
-          
-           
-              
-               
-                  <label class="form-label required">
-                court
-                     </label>
-                     <input type="text" class="form-input" required>
-                     <label class="form-label required">
-                   party in the case
-                       </label>
-                       <div class="select">
-                         <select class="form-input ">
-                        
-                           <option>
-                            select from menu
-                           </option>
-                           <option>
-                            select from menu
-                           </option>
-                           <option>
-                            select from menu
-                           </option>
-                           <option>
-                            select from menu
-                           </option>
-                           </select>
-                       </div>
-                       <label class="form-label required">
-                        case summary
-                          </label>
-                          <textarea class="form-input form-textarea w-100 textarea-text">enter a text description of the case details</textarea>
-                       <label class="form-label required">
-                        case documents
-                          </label>
-                          <div class="upload__box">
-                            <div class="upload__btn-box">
-                               <label class="form-input upload__btn " id="file" for="customFile">
-                               
-                               <b class="upload-file">upload file</b>
-                               <input type="file"  class="upload__inputfile" id="customFile" >
-                               </label>
-                            </div>
-                          
-                         </div>
-                         <a href="request-success-en.html" type="submit" class="submit-btn">
-                                send
-                         </a>
-          </form>
+          <img class="success-img" src="images/success.png" alt="success sign in">
+          <h2 class="sign-in-success-title">
+            Your account has been registered successfully
+          </h2>
+    <p class="success-text">
+      Thank you for choosing Othman Ahmed Al-Dawish Law Firm and Legal Consultations
+    </p>
+    <p class="success-text">
+     order number
+      <span class="order-number">
+       #123
+      </span>
+      ,you can view the details through the My Orders screen
+     </p>
+    <a href="#" type="submit" class="submit-btn">
+      my orders
+</a>
         </div>
+
+
+
       </div>
-          
-    </div>
     </div>
    
     <!-- end about section -->
@@ -597,5 +489,40 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function togglePassword() {
+       
+    var x = document.getElementById("pass");
+    var eyeSlash = document.getElementById("eye-slash");
+    var eye = document.getElementById("eye");
+    if (x.type === "password") {
+      x.type = "text";
+      eyeSlash.style.display="none";
+      eye.style.display="block";
+
+    } else {
+      x.type = "password";
+      eyeSlash.style.display="block";
+      eye.style.display="none";
+    }
+  }
+
+  function togglePassword2() {
+       
+       var xx = document.getElementById("pass2");
+       var eyeSlashh = document.getElementById("eye-slash2");
+       var eyee = document.getElementById("eye2");
+       if (xx.type === "password") {
+         xx.type = "text";
+         eyeSlashh.style.display="none";
+         eyee.style.display="block";
+   
+       } else {
+         xx.type = "password";
+         eyeSlashh.style.display="block";
+         eyee.style.display="none";
+       }
+     }
+      </script>
   </body>
 </html>

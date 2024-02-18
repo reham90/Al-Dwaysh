@@ -1974,6 +1974,11 @@ html[dir="ltr"] .footer:before{
 	margin: 0 auto 25px;
 	display: flex;
 	justify-content: center;
+	padding-inline-start: 30px;
+}
+html[dir="ltr"] .success-img{
+	padding-inline-start: 0;
+	padding-inline-end: 30px;
 }
 .sign-in-success-title{
 	color: var(--main-hover);
@@ -1984,6 +1989,13 @@ html[dir="ltr"] .footer:before{
 	margin: 0 0 17px;
 	justify-content: center;
 	
+}
+.order-number{
+	color: var(--main-color);
+	font-size: 18px;
+	display: flex;
+	margin-inline-start: 3px;
+	margin-inline-end: 3px;
 }
 .edit-account-section .sign-in-success-title{
 	text-align: start !important;
@@ -2576,7 +2588,7 @@ html[dir="ltr"] .about-us-section:before{
 	bottom: 73px;
     inset-inline-start: 20px;
 	
-	z-index: 10;
+	z-index: 9999;
 	text-decoration: none !important;
 }
 

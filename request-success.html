@@ -152,7 +152,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="request-consultation-en.html">English</a>
+                  <a href="request-success-en.html">English</a>
                 </li>
               </ul>
             
@@ -304,7 +304,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="request-consultation-en.html">English</a>
+                  <a href="request-success-en.html">English</a>
                 </li>
               </ul>
             
@@ -369,136 +369,26 @@
 
    
     <!-- about-section -->
-    <div class="about-us-section">
+    <div class="about-us-section height-auto">
       <div class="container">
         <div class="careers-section">
-          
-          <div class="careers-form-section">
-            <form class="careers-form">
-              <label class="form-label required">
-               نوع الطلب
-                </label>
-                <div class="checkbox-section ">
-                  <div class="radio-button-block checkbox-block">
-                     <div class=" radio-check">
-                        <input type="radio"   id="arbitration" name="ristrict" value="تحكيم" checked>
-                        <label class="radio-btn-label" for="arbitration"> تحكيم</label>
-                     </div>
-                  </div>
-                  <div class="radio-button-block checkbox-block">
-                     <div class=" radio-check">
-                        <input type="radio"  id="Issues"  name="ristrict" value="قضايا">
-                        <label class="radio-btn-label" for="Issues"> قضايا</label>
-                     </div>
-                  </div>
-               </div>
-              <label class="form-label required">
-               اسم العميل
-              </label>
-              <input type="text" class="form-input" required>
-              <label class="form-label required">
-                رقم الهوية
-                 </label>
-                 <input type="number" class="form-input" required>
-                 <label class="form-label required">
-                  رقم الجوال
-                   </label>
-                   <input type="number" class="form-input" required>
-                   <label class="form-label required">
-                    البريد الإلكتروني
-                    </label>
-                    <input type="email" class="form-input" required>
-                    <label class="form-label required">
-                      العنوان
-                       </label>
-                       <input type="text" class="form-input" required>
-             <label class="form-label required">
-             نوع القضية
-              </label>
-              <div class="select">
-                <select class="form-input ">
-               
-                  <option>
-                    اختر من القائمة
-                  </option>
-                  <option>
-                    اختر من القائمة
-                  </option>
-                  <option>
-                    اختر من القائمة
-                  </option>
-                  <option>
-                    اختر من القائمة
-                  </option>
-                  </select>
-              </div>
-              <label class="form-label required">
-               حالة القضية
-                 </label>
-                 <div class="checkbox-section ">
-                   <div class="radio-button-block checkbox-block">
-                      <div class=" radio-check">
-                         <input type="radio"   id="new" name="status" value="جديدة" checked>
-                         <label class="radio-btn-label" for="new"> جديدة</label>
-                      </div>
-                   </div>
-                   <div class="radio-button-block checkbox-block">
-                      <div class=" radio-check">
-                         <input type="radio"  id="existing"  name="status" value="قائمة">
-                         <label class="radio-btn-label" for="existing"> قائمة</label>
-                      </div>
-                   </div>
-                </div>
-            
-             
-                
-                 
-                    <label class="form-label required">
-                   المحكمة
-                       </label>
-                       <input type="text" class="form-input" required>
-                       <label class="form-label required">
-                      الطرف في القضية
-                         </label>
-                         <div class="select">
-                           <select class="form-input ">
-                          
-                             <option>
-                               اختر من القائمة
-                             </option>
-                             <option>
-                               اختر من القائمة
-                             </option>
-                             <option>
-                               اختر من القائمة
-                             </option>
-                             <option>
-                               اختر من القائمة
-                             </option>
-                             </select>
-                         </div>
-                         <label class="form-label required">
-                          ملخص القضية
-                            </label>
-                            <textarea class="form-input form-textarea w-100 textarea-text">ادخل وصف نصي لتفاصيل القضية</textarea>
-                         <label class="form-label required">
-                          مستندات القضية
-                            </label>
-                            <div class="upload__box">
-                              <div class="upload__btn-box">
-                                 <label class="form-input upload__btn " id="file" for="customFile">
-                                 
-                                 <b class="upload-file">إضافة ملف</b>
-                                 <input type="file"  class="upload__inputfile" id="customFile" >
-                                 </label>
-                              </div>
-                            
-                           </div>
-                           <a href="request-success.html" type="submit" class="submit-btn">
-                                  إرسال
-                           </a>
-            </form>
-          </div>
+          <img class="success-img" src="images/success.png" alt="success sign in">
+          <h2 class="sign-in-success-title">
+         تم استقبال طلبك  بنجاح
+          </h2>
+    <p class="success-text">
+      شكرا لاختيارك شركة عثمان أحمد الدويش للمحاماة والاستشارات القانونية
+    </p>
+    <p class="success-text">
+     رقم الطلب هو 
+     <span class="order-number">
+      #123
+     </span>
+     ,يمكنك التفاصيل من خلال شاشة طلباتي
+    </p>
+    <a href="#" type="submit" class="submit-btn">
+    طلباتي
+</a>
         </div>
      
       </div>
@@ -599,5 +489,40 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function togglePassword() {
+       
+    var x = document.getElementById("pass");
+    var eyeSlash = document.getElementById("eye-slash");
+    var eye = document.getElementById("eye");
+    if (x.type === "password") {
+      x.type = "text";
+      eyeSlash.style.display="none";
+      eye.style.display="block";
+
+    } else {
+      x.type = "password";
+      eyeSlash.style.display="block";
+      eye.style.display="none";
+    }
+  }
+
+  function togglePassword2() {
+       
+       var xx = document.getElementById("pass2");
+       var eyeSlashh = document.getElementById("eye-slash2");
+       var eyee = document.getElementById("eye2");
+       if (xx.type === "password") {
+         xx.type = "text";
+         eyeSlashh.style.display="none";
+         eyee.style.display="block";
+   
+       } else {
+         xx.type = "password";
+         eyeSlashh.style.display="block";
+         eyee.style.display="none";
+       }
+     }
+      </script>
   </body>
 </html>
