@@ -1767,9 +1767,56 @@ html[dir="ltr"] .date{
 		margin-inline-end: 10px;
 	
 }
+.notifications-title-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.notifications-title-bar h2{
+	margin: 0;
+}
 .radio-check{
 	display: flex;
 }
+.delete-notifications{
+	width: 180px;
+	height: 45px;
+	background-color: rgb(229, 236, 244);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 22.5px;
+	color:  rgb(149, 163, 179) ;
+	font-size: 14px;
+	font-family: "IBMPlexSansArabic-Bold";
+	transition: 0.5s;
+	text-decoration: none;
+}
+.delete-notifications:hover{
+	background-color: var(--main-hover);
+	color: #fff;
+}
+.notification-block{
+	display: flex;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.w-848{
+	width: 848px;
+	max-width: max-content;
+}
+.notification-date{
+	display: flex;
+	text-align: start;
+	color: rgb(128, 128, 128);
+	font-size: 12px;
+}
+
 .input-radio-btn:checked::after {
 	font: var(--fa-font-regular);
     content: "\f00c";
@@ -1836,6 +1883,7 @@ html[dir="ltr"] .forget-password-link{
   
 .edit-account-section{
 	display: flex;
+	align-items: flex-start;
 	
 }
 .my-account-list{
@@ -1846,6 +1894,25 @@ html[dir="ltr"] .forget-password-link{
 	border-radius: 15px;
 	margin-inline-end: 30px;
 }
+.small-logo{
+	background-color: rgba(15, 106, 151,0.102);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin-inline-end: 17px;
+}
+.notification-content{
+	text-align: start;
+	color: var(--main-hover);
+	font-size: 14px;
+	line-height: 1.714;
+	margin: 0 0 12px;
+}
+
 .name{
 	background-color: var(--main-hover);
 	padding: 13px 18px;
@@ -2647,6 +2714,9 @@ html[dir="ltr"] .about-us-section:before{
 	.terms-conditions-group{
 		width: 300px;
 	}
+	.w-848{
+		width: 555px;
+	}
 	.fixed-terms{
 		inset-inline-end: calc(100% - 980px);
 	}
@@ -3034,6 +3104,9 @@ html[dir="ltr"] .about-us-section:before{
 	}
 	.edit-account-section{
 		flex-wrap: nowrap;
+	}
+	.w-848{
+		width: 555px;
 	}
 	.my-account-list{
 		display: block;
