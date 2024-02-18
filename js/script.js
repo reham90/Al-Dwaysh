@@ -76,6 +76,21 @@ $(document).ready(function() {
       }
   });
 
+   //fixed terms
+   $stickyTerms = $(".terms-conditions-titles");
+   $(window).scroll("scroll load", function() {
+       var scroll = $(window).scrollTop();
+       if (scroll >= 356) {
+           $stickyTerms.addClass("fixed-terms", 500);
+       } else {
+           $stickyTerms.removeClass("fixed-terms", 500);
+       }
+       if (scroll == 0) {
+           $stickyTerms.removeClass("fixed-terms", 500);
+       }
+   });
+   
+
     /// ////// ** main-slider** /////////
     const specials = new Swiper('.main-slider .swiper-container', {
         loop: true,
