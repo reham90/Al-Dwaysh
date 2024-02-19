@@ -952,6 +952,17 @@ background-color: #eef4f8;
 	align-items: flex-end;
 	justify-content: center;
 }
+.mb30{
+	margin-bottom: 30px;
+}
+.meeting-answer{
+	font-size: 14px;
+	color: rgb(102, 102, 102) ;
+	display: inline-block;
+	text-align: start;
+	margin: 0 0 15px;
+
+}
 .service-img{
 	width: 100%;
 	transition: 0.5s;
@@ -1948,6 +1959,7 @@ html[dir="ltr"] .date{
 	text-align: start;
 	font-family: "IBMPlexSansArabic-SemiBold";
 	margin: 0 0 10px;
+	width: 100%;
 }
 .mb20{
 	margin-bottom: 20px;
@@ -2340,6 +2352,12 @@ html[dir="ltr"] .success-img{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.meeting-pay-section{
+	width: 100%;
+}
+.mb30{
+	margin-bottom: 10px;
 }
 .pay-details .checkbox-block{
 	width: 100%;
