@@ -1310,6 +1310,16 @@ color: #fd2121;
 	color: rgb(128, 128, 128);
 	font-size: 16px;
 }
+.order-det-row{
+	display: flex;
+	margin-bottom: 12px;
+	width: 100%;
+}
+.order-det{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 .form-input:focus{
 	border: 2px solid var(--main-color);
 }
@@ -1519,19 +1529,22 @@ input[type=number] {
 	text-decoration: none;
 	width: 100%;
 }
-.order-labels{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	margin-inline-end: 67px;
-	
-}
-.order-labels li{
+
+.order-labels {
 	color: var(--main-hover);
 	font-size: 14px;
 	font-family: "IBMPlexSansArabic-SemiBold";
-	margin-bottom: 12px;
 	
+	display: inline-block;
+	width: 140px;
+}
+.order-answer{
+	color: var(--main-hover);
+	font-size: 14px;
+	
+	
+	display: inline-block;
+	width: auto;
 }
 .order-status{
 	display: flex;
@@ -1566,9 +1579,7 @@ html[dir="ltr"] .order-status{
 
 
 
-.order-answers{
-	margin-inline-end: 165px;
-}
+
 html[dir="ltr"] .order-answers{
 	margin-inline-end: 140px;
 }
@@ -2386,9 +2397,8 @@ html[dir="ltr"] .order-answers {
     margin-inline-end: 0;
 }
 .order-block{
-	display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .order-labels{
 	margin-inline-end: 0;
