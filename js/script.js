@@ -76,19 +76,7 @@ $(document).ready(function() {
       }
   });
 
-   //fixed terms
-   $stickyTerms = $(".terms-conditions-titles");
-   $(window).scroll("scroll load", function() {
-       var scroll = $(window).scrollTop();
-       if (scroll >= 356) {
-           $stickyTerms.addClass("fixed-terms", 500);
-       } else {
-           $stickyTerms.removeClass("fixed-terms", 500);
-       }
-       if (scroll == 0) {
-           $stickyTerms.removeClass("fixed-terms", 500);
-       }
-   });
+ 
    
 
     /// ////// ** main-slider** /////////
@@ -118,7 +106,24 @@ $(document).ready(function() {
             },
         },
     });
-
+///////////////////// fixed terms and conditions div /////////////////////////
+var fixmeTop = $('.terms-conditions-titles').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.terms-conditions-titles').css({
+            position: 'fixed',
+            top: '0',
+            "inset-inline-start": 'calc(100vw - 1140px/2)',
+            "z-index": '9999'
+        });
+    } else {
+        $('.terms-conditions-titles').css({
+            position: 'static'
+        });
+    }
+});
+   
 
     ////////////** counter  *///////////////////////////////
 var ax = 0;
@@ -212,7 +217,6 @@ $(window).scroll(function() {
     })
 
 
-   
   //////////** fixed arrow to top**//////////
   $(".arrow-top").click(function() {
       $("html,body").animate({

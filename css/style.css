@@ -471,6 +471,7 @@ html[dir="ltr"] .first-level-link:after {
 
 .fixed-header {
 	position: fixed;
+	
 }
 
 .fixed-header .fixed-nav {
@@ -484,6 +485,9 @@ html[dir="ltr"] .first-level-link:after {
 	max-width: 216px;
 	max-height: 54px;
 	transition: all 0.3s ease-in-out;
+}
+.terms-section{
+	z-index: 999;
 }
 
 .nav-head {
@@ -1506,15 +1510,7 @@ input[type=number] {
 	justify-content: space-between;
 	position: relative;
 }
-.fixed-terms{
-	position: fixed;
-    inset-inline-end: calc(100% - 1338px);
-	bottom: 300px;
-	height: 100%;
-	overflow-x: hidden;
-	top:0;
-	z-index: 99;
-}
+
 
 .mb35{
 	margin-bottom: 35px !important;
@@ -2141,6 +2137,7 @@ html[dir="ltr"] .forget-password-link{
 	z-index: 999;
 	background-size: 100%;
 }
+
 .footer:before{
 	content: url(../images/shape.png);
 	transform: scaleX(-1);
@@ -2949,9 +2946,7 @@ html[dir="ltr"] .about-us-section:before{
 	.w-848{
 		width: 555px;
 	}
-	.fixed-terms{
-		inset-inline-end: calc(100% - 980px);
-	}
+	
 	.term-paragraph{
 		max-width: 550px;
 	}
@@ -3449,7 +3444,5 @@ html[dir="ltr"] .about-us-section:before{
 	.partners-slider .swiper-pagination{
 		display: none;
 	}
-	.fixed-terms{
-		inset-inline-end: calc(100% - 1215px);
-	}
+	
 }
