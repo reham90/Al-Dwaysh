@@ -2321,7 +2321,9 @@ html[dir="ltr"] .success-img{
 	padding-top: 50px;
 	position: relative;
 }
-
+.h-auto{
+	height: max-content !important;
+}
 
 
 
@@ -2926,6 +2928,9 @@ html[dir="ltr"] .about-us-section:before{
 	.pay-details{
 		width: 220px;
 	}
+	.h-auto{
+		height: max-content !important;
+	}
 	.terms-conditions-group{
 		width: 300px;
 	}
@@ -3334,6 +3339,9 @@ html[dir="ltr"] .about-us-section:before{
 	}
 	.w-848{
 		width: 555px;
+	}
+	.h-auto{
+		height: auto;
 	}
 	.meeting-pay-section {
 		width: 100%;
