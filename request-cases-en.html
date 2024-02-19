@@ -439,7 +439,7 @@
                        <label class="form-label required">
                         case summary
                           </label>
-                          <textarea class="form-input form-textarea w-100 textarea-text">enter a text description of the case details</textarea>
+                          <textarea class="form-input form-textarea w-100 textarea-text" onfocus="clearContents(this);">enter a text description of the case details</textarea>
                        <label class="form-label required">
                         case documents
                           </label>
@@ -563,6 +563,21 @@
       function change_loc(url){
        document.location.href = url;
    };
+   
+////////////////////// remove default text of textarea on click ////////////////////////
+  
+
+$(".textarea-text")
+.focus(function() {
+      if (this.value === this.defaultValue) {
+          this.value = '';
+      }
+})
+.blur(function() {
+      if (this.value === '') {
+          this.value = this.defaultValue;
+      }
+});
    </script>
   </body>
 </html>

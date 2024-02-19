@@ -1361,7 +1361,7 @@ select {
 	outline: none;
 	position: relative;
   }
- 
+
 .radio-check input{
  
   
@@ -2353,6 +2353,9 @@ html[dir="ltr"] .success-img{
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+.terms-section {
+    z-index: 9;
+}
 .meeting-pay-section{
 	width: 100%;
 }
@@ -2919,6 +2922,9 @@ html[dir="ltr"] .about-us-section:before{
 	html[dir="ltr"] .order-labels{
 		margin-inline-end: 30px;
 	}
+	.terms-conditions-titles{
+		inset-inline-start: calc(100vw - 740px/2) !important;
+	}
 	.w-555 {
 		width: 400px !important;
 	}
@@ -3444,5 +3450,7 @@ html[dir="ltr"] .about-us-section:before{
 	.partners-slider .swiper-pagination{
 		display: none;
 	}
-	
+	.terms-conditions-titles{
+		inset-inline-start: calc(100vw - 1000px/2) !important;
+	}
 }

@@ -606,6 +606,22 @@
        function change_loc(url){
         document.location.href = url;
     };
+
+    
+////////////////////// remove default text of textarea on click ////////////////////////
+  
+
+$(".textarea-text")
+.focus(function() {
+      if (this.value === this.defaultValue) {
+          this.value = '';
+      }
+})
+.blur(function() {
+      if (this.value === '') {
+          this.value = this.defaultValue;
+      }
+});
     </script>
   </body>
 </html>
