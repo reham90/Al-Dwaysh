@@ -514,6 +514,10 @@ html[dir="ltr"] .first-level-link:after {
 	font-size: 16px;
 	margin-inline-end: 5px;
 }
+.request-type{
+	text-decoration: none;
+	cursor: pointer;
+}
 .consultation-link {
 	position: relative;
 	text-decoration: none;
@@ -1499,6 +1503,68 @@ input[type=number] {
 .mb35{
 	margin-bottom: 35px !important;
 }
+.order-link{
+	text-decoration: none;
+	width: 100%;
+}
+.order-labels{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-inline-end: 67px;
+}
+.order-labels li{
+	color: var(--main-hover);
+	font-size: 14px;
+	font-family: "IBMPlexSansArabic-SemiBold";
+	margin-bottom: 12px;
+	
+}
+.order-status{
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	width: 60px;
+	height: 23px;
+	border-radius: 11.5px;
+font-size: 14px;
+}
+html[dir="ltr"] .order-status{
+	width: 80px;
+}
+.new{
+	background-color: rgba(228, 152, 19, 0.149);
+	color: rgb(228, 152, 19);
+}
+.current{
+	background-color: rgba(15, 106, 151, 0.149);
+	color: rgb(15, 106, 151);
+}
+.completed{
+	background-color: rgba(13, 193, 67, 0.149);
+	color: rgb(13, 193, 67);
+}
+.canceled{
+	background-color: rgba(255, 0, 0, 0.149);
+	color: rgb(255, 0, 0);
+}
+
+  
+
+
+
+.order-answers{
+	margin-inline-end: 165px;
+}
+html[dir="ltr"] .order-answers{
+	margin-inline-end: 140px;
+}
+.order-answers li{
+	font-family: "IBMPlexSansArabic-Regular" ;
+}
+.order-labels li:last-child{
+	margin-bottom: 0;
+}
 .terms-conditions-group{
 	width: 364px;
 	min-height: 378px;
@@ -2188,6 +2254,20 @@ html[dir="ltr"] .success-img{
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+html[dir="ltr"] .order-answers {
+    margin-inline-end: 0;
+}
+.order-block{
+	display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.order-labels{
+	margin-inline-end: 0;
+}
+.order-lanswers{
+	margin-inline-end: 0;
+}
 .edit-account-section .careers-form{
 	width: 100%;
 }
@@ -2711,8 +2791,20 @@ html[dir="ltr"] .about-us-section:before{
 		z-index: 99;
 		width: 992px;
 	}
+	html[dir="ltr"] .order-labels{
+		margin-inline-end: 30px;
+	}
 	.terms-conditions-group{
 		width: 300px;
+	}
+	.order-labels li{
+		white-space: nowrap;
+	}
+	.order-answers{
+		margin-inline-end: 30px;
+	}
+	html[dir="ltr"] .order-answers{
+		margin-inline-end: 30px;
 	}
 	.w-848{
 		width: 555px;

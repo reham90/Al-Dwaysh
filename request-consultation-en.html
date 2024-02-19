@@ -326,7 +326,7 @@
                   <div class="dropdown-content">
                      <a href="edit-account-en.html">Edit account</a>
                      <a href="change-password-en.html">change password</a>
-                     <a href="#">my orders</a>
+                     <a href="my-orders-en.html">my orders</a>
                      <a href="notifications-en.html">notifications</a>
                      <a href="#">sign out</a>
                     
@@ -384,7 +384,7 @@
                 </div>
                 <div class="radio-button-block checkbox-block">
                    <div class=" radio-check">
-                      <input type="radio"  id="Issues"  name="ristrict" value="cases">
+                      <input type="radio"  id="Issues"  name="ristrict" value="cases" onclick="change_loc('file:///D:/work-for-tasawok/Al-Dwaysh/request-cases-en.html')">
                       <label class="radio-btn-label" for="Issues"> cases</label>
                    </div>
                 </div>
@@ -597,5 +597,10 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function change_loc(url){
+       document.location.href = url;
+   };
+   </script>
   </body>
 </html>

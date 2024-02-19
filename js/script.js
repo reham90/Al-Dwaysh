@@ -211,6 +211,8 @@ $(window).scroll(function() {
         this.checked = !this.checked;
     })
 
+
+   
   //////////** fixed arrow to top**//////////
   $(".arrow-top").click(function() {
       $("html,body").animate({

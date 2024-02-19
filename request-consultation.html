@@ -328,7 +328,7 @@
                   <div class="dropdown-content">
                      <a href="edit-account.html">تعديل بيانات الحساب</a>
                      <a href="change-password.html">تغيير كلمة المرور</a>
-                     <a href="#">طلباتي</a>
+                     <a href="my-orders.html">طلباتي</a>
                      <a href="notifications.html">الإشعارات</a>
                      <a href="#">تسجيل خروج</a>
                     
@@ -380,14 +380,17 @@
                 </label>
                 <div class="checkbox-section ">
                   <div class="radio-button-block checkbox-block">
-                     <div class=" radio-check">
-                        <input type="radio"   id="arbitration" name="ristrict" value="تحكيم" checked>
+                   
+                      <div class=" radio-check">
+                        <input type="radio"   id="arbitration" name="ristrict" value="تحكيم"  checked>
                         <label class="radio-btn-label" for="arbitration"> تحكيم</label>
                      </div>
+                   
+                    
                   </div>
                   <div class="radio-button-block checkbox-block">
                      <div class=" radio-check">
-                        <input type="radio"  id="Issues"  name="ristrict" value="قضايا">
+                        <input type="radio"  id="Issues"  name="ristrict" value="قضايا" onclick="change_loc('file:///D:/work-for-tasawok/Al-Dwaysh/request-cases.html')">
                         <label class="radio-btn-label" for="Issues"> قضايا</label>
                      </div>
                   </div>
@@ -599,5 +602,10 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+       function change_loc(url){
+        document.location.href = url;
+    };
+    </script>
   </body>
 </html>
