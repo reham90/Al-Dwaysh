@@ -106,67 +106,10 @@ $(document).ready(function() {
             },
         },
     });
-///////////////////// fixed terms and conditions div /////////////////////////
-var fixmeTop = $('.terms-conditions-titles').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('.terms-conditions-titles').css({
-            position: 'fixed',
-            top: '0',
-            "inset-inline-start": 'calc(100vw - 1140px/2)',
-            "z-index": '9999'
-        });
-    } else {
-        $('.terms-conditions-titles').css({
-            position: 'static'
-        });
-    }
-});
-if ($(window).width() > 1199 && $(window).width() <= 992) {
-    var fixmeTop = $('.terms-conditions-titles').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('.terms-conditions-titles').css({
-            position: 'fixed',
-            top: '0',
-            "inset-inline-start": 'calc(100vw - 740px/2)',
-            "z-index": '9999'
-        });
-    } else {
-        $('.terms-conditions-titles').css({
-            position: 'static'
-        });
-    }
-});
-}
 
 
-    ////////////** counter  *///////////////////////////////
-var ax = 0;
-$(window).scroll(function() {
 
-    var oTop = $('#counter').offset().top - window.innerHeight;
-    // Md.Asaduzzaman Muhid
-    if (ax == 0 && $(window).scrollTop() > oTop) {
-        $('.counter-number').each(function() {
-            var $this = $(this);
-            jQuery({
-                Counter: 0
-            }).animate({
-                Counter: $this.text()
-            }, {
-                duration: 2000,
-                easing: 'swing',
-                step: function() {
-                    $this.text(Math.ceil(this.Counter));
-                }
-            });
-        });
-        ax = 1; // Md.Asaduzzaman Muhid
-    }
-});
+
 
  
 
@@ -254,6 +197,65 @@ $(window).scroll(function() {
           $(".arrow-top").fadeOut(300);
   })
 
+    ////////////** counter  *///////////////////////////////
+    var ax = 0;
+    $(window).scroll(function() {
+    
+        var oTop = $('#counter').offset().top - window.innerHeight;
+        // Md.Asaduzzaman Muhid
+        if (ax == 0 && $(window).scrollTop() > oTop) {
+            $('.counter-number').each(function() {
+                var $this = $(this);
+                jQuery({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            ax = 1; // Md.Asaduzzaman Muhid
+        }
+    });
 
+    ///////////////////// fixed terms and conditions div /////////////////////////
+var fixmeTop = $('.terms-conditions-titles').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.terms-conditions-titles').css({
+            position: 'fixed',
+            top: '0',
+            "inset-inline-start": 'calc(100vw - 1140px/2)',
+            "z-index": '9999'
+        });
+    } else {
+        $('.terms-conditions-titles').css({
+            position: 'static'
+        });
+    }
+});
+if ($(window).width() > 1199 && $(window).width() <= 992) {
+    var fixmeTop = $('.terms-conditions-titles').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.terms-conditions-titles').css({
+            position: 'fixed',
+            top: '0',
+            "inset-inline-start": 'calc(100vw - 740px/2)',
+            "z-index": '9999'
+        });
+    } else {
+        $('.terms-conditions-titles').css({
+            position: 'static'
+        });
+    }
+});
+}
 
 });
