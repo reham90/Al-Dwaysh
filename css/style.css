@@ -514,9 +514,14 @@ html[dir="ltr"] .first-level-link:after {
 	font-size: 16px;
 	margin-inline-end: 5px;
 }
-.request-type{
-	text-decoration: none;
-	cursor: pointer;
+.back{
+	width: 89px !important;
+}
+.order-details{
+	display: flex;
+}
+.w-555{
+	width: 555px !important;
 }
 .consultation-link {
 	position: relative;
@@ -1512,6 +1517,7 @@ input[type=number] {
 	margin: 0;
 	padding: 0;
 	margin-inline-end: 67px;
+	
 }
 .order-labels li{
 	color: var(--main-hover);
@@ -1534,19 +1540,19 @@ html[dir="ltr"] .order-status{
 }
 .new{
 	background-color: rgba(228, 152, 19, 0.149);
-	color: rgb(228, 152, 19);
+	color: rgb(228, 152, 19) !important;
 }
 .current{
 	background-color: rgba(15, 106, 151, 0.149);
-	color: rgb(15, 106, 151);
+	color: rgb(15, 106, 151) !important;
 }
 .completed{
 	background-color: rgba(13, 193, 67, 0.149);
-	color: rgb(13, 193, 67);
+	color: rgb(13, 193, 67) !important;
 }
 .canceled{
 	background-color: rgba(255, 0, 0, 0.149);
-	color: rgb(255, 0, 0);
+	color: rgb(255, 0, 0) !important;
 }
 
   
@@ -1882,7 +1888,88 @@ html[dir="ltr"] .date{
 	color: rgb(128, 128, 128);
 	font-size: 12px;
 }
-
+.order-details-title{
+	color: var(--main-hover);
+	font-size: 16px;
+	font-family: "IBMPlexSansArabic-SemiBold";
+	width:100%;
+	margin: 0 0 17px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid rgb(229, 237, 246);
+}
+.order-details-row{
+	display: flex;
+	margin: 0 0 20px;
+	width: 100%;
+}
+.order-details-answer{
+	color: var(--main-hover);
+	font-size: 14px;
+	display: flex;
+	text-align: start;
+}
+.order-details-label{
+	color: var(--main-hover);
+	font-size: 14px;
+	margin: 0;
+	width: 140px;
+	margin-inline-end: 30px;
+	text-align: start;
+	font-family: "IBMPlexSansArabic-SemiBold";
+}
+.download-button{
+	background-color: transparent;
+	border: 0;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: underline;
+	font-size: 14px;
+	color: #ff0000;
+}
+.download-button:focus{
+	outline: none;
+}
+.case-brief{
+	width: 340px;
+}
+.pay-details{
+	width: 263px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #fff;
+	margin-inline-start: 30px;
+	height: max-content;
+}
+.pay-label{
+	color: var(--main-hover);
+	font-size: 14px;
+	text-align: start;
+	font-family: "IBMPlexSansArabic-SemiBold";
+	margin: 0 0 10px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.margin-0{
+	margin-inline-start: 0;
+}
+.payment-radio-label{
+	color: rgb(102, 102, 102);
+	font-size: 14px;
+}
+.money{
+	color: var(--main-color);
+	font-size: 18px;
+	font-family: "IBMPlexSansArabic-Bold";
+	display: flex;
+	text-align: start;
+	margin: 0 0 30px;
+}
+.pay-img{
+	margin-inline-start: 5px;
+}
 .input-radio-btn:checked::after {
 	font: var(--fa-font-regular);
     content: "\f00c";
@@ -2253,6 +2340,26 @@ html[dir="ltr"] .success-img{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.pay-details .checkbox-block{
+	width: 100%;
+}
+.order-details{
+	flex-wrap: wrap;
+}
+.w-555{
+	width: 100% !important;
+}
+.case-brief{
+	width: 100%;
+}
+.order-details-label{
+	width: 95px;
+	white-space: nowrap;
+}
+.pay-details{
+	margin-inline-start: 0;
+	width: 100%;
 }
 html[dir="ltr"] .order-answers {
     margin-inline-end: 0;
@@ -2793,6 +2900,12 @@ html[dir="ltr"] .about-us-section:before{
 	}
 	html[dir="ltr"] .order-labels{
 		margin-inline-end: 30px;
+	}
+	.w-555 {
+		width: 400px !important;
+	}
+	.pay-details{
+		width: 220px;
 	}
 	.terms-conditions-group{
 		width: 300px;
