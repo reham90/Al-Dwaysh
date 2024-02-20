@@ -2254,6 +2254,7 @@ html[dir="ltr"] .success-img{
 	justify-content: center;
 	margin: 0 0 9px;
 	text-align: center;
+	
 }
 
 
@@ -2366,6 +2367,9 @@ html[dir="ltr"] .success-img{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.success-text{
+	flex-wrap: wrap;
 }
 .hidden-large{
 	display: flex;
@@ -2516,6 +2520,7 @@ html[dir="ltr"] .forget-password-link{
 }
 .faq-answer{
 	padding-inline-start: 36px;
+	padding-inline-end: 36px;
 }
 .terms-conditions-section{
 	padding: 0 0 50px;
@@ -2527,9 +2532,12 @@ html[dir="ltr"] .forget-password-link{
 .term-paragraph{
 	max-width: 100%;
 }
+.accordion .accordion__title:has(input:checked) + .accordion__text{
+	max-height: 350px;
+}
 .partners-grid{
 	padding: 0 0 50px;
-	grid-template-columns: repeat(4,1fr);
+	grid-template-columns: repeat(3,1fr);
 	grid-gap: 50px 30px;
 }
 .careers-form-section{
@@ -2619,7 +2627,7 @@ width: 100%;
 	margin-top: 50px;
 }
 .partners-section{
-	padding: 0 0 70px;
+	padding: 0 0 100px;
 }
 .nav-header{
 	padding: 15px 0;
@@ -2888,7 +2896,7 @@ html[dir="ltr"] .about-us-section:before{
 .arrow-top {
 	position: fixed;
 	bottom: 73px;
-    inset-inline-start: 20px;
+    inset-inline-start: 15px;
 	
 	z-index: 9999;
 	text-decoration: none !important;
@@ -3335,11 +3343,11 @@ html[dir="ltr"] .about-us-section:before{
 		display: block;
 	}
 
-	.big-menu .language-anchor {
+	.hidden-large .consultation-link {
 		position: absolute;
-		top: 25px;
-		inset-inline-start: 40px;
-		width: 100%;
+		top:25px;
+		inset-inline-start: 20px;
+		margin: 0;
 	}
 
 	.big-menu .language-anchor:hover {
