@@ -13,6 +13,7 @@ $(document).ready(function() {
           $('.menu-bars .times').toggleClass('hide-icon');
           $(".navgition").toggleClass("reset-left");
           $("body").toggleClass("overflow");
+          $("html").toggleClass("overflow");
 
       });
       $(".nav-head .close-btn").click(function() {
@@ -20,6 +21,7 @@ $(document).ready(function() {
           $(".menu-bars .bars").toggleClass("open-bars");
           $(".menu-bars .bars").toggleClass("close-bars");
           $("body").removeClass("overflow");
+          $("html").removeClass("overflow");
       });
 
 

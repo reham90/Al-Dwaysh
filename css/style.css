@@ -16,7 +16,7 @@ a:hover {
 }
 
 .overflow {
-	overflow: hidden;
+	overflow: hidden !important;
 }
 
 :root {
@@ -1945,6 +1945,7 @@ html[dir="ltr"] .date{
 	text-decoration: underline;
 	font-size: 14px;
 	color: #ff0000;
+	padding: 0;
 }
 .download-button:focus{
 	outline: none;
@@ -2364,6 +2365,9 @@ html[dir="ltr"] .success-img{
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+.footer{
+	z-index: 9;
+}
 .terms-section {
     z-index: 9;
 }
@@ -2383,11 +2387,13 @@ html[dir="ltr"] .success-img{
 	width: 100% !important;
 }
 .case-brief{
-	width: 100%;
+	width: 180px;
 }
 .order-details-label{
 	width: 95px;
 	white-space: nowrap;
+	display: flex;
+	
 }
 .pay-details{
 	margin-inline-start: 0;
@@ -2935,6 +2941,9 @@ html[dir="ltr"] .about-us-section:before{
 	.terms-conditions-titles{
 		inset-inline-start: calc(100vw - 740px/2) !important;
 	}
+	.case-brief {
+		width: 180px;
+	}
 	.w-555 {
 		width: 400px !important;
 	}
@@ -3350,6 +3359,9 @@ html[dir="ltr"] .about-us-section:before{
 	}
 	.w-848{
 		width: 555px;
+	}
+	.case-brief {
+		width: 250px;
 	}
 	.h-auto{
 		height: auto;
