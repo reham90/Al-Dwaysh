@@ -224,40 +224,5 @@ $(document).ready(function() {
         }
     });
 
-    ///////////////////// fixed terms and conditions div /////////////////////////
-var fixmeTop = $('.terms-conditions-titles').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('.terms-conditions-titles').css({
-            position: 'fixed',
-            top: '0',
-            "inset-inline-start": 'calc(100vw - 1140px/2)',
-            "z-index": '9999'
-        });
-    } else {
-        $('.terms-conditions-titles').css({
-            position: 'static'
-        });
-    }
-});
-if ($(window).width() > 1199 && $(window).width() <= 992) {
-    var fixmeTop = $('.terms-conditions-titles').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('.terms-conditions-titles').css({
-            position: 'fixed',
-            top: '0',
-            "inset-inline-start": 'calc(100vw - 740px/2)',
-            "z-index": '9999'
-        });
-    } else {
-        $('.terms-conditions-titles').css({
-            position: 'static'
-        });
-    }
-});
-}
-
+  
 });
