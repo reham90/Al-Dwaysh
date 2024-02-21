@@ -800,7 +800,7 @@ html[dir="ltr"] .first-level-link:after {
 .about-us-section:before{
 	background-image: url(../images/shape.png);
 	position: absolute;
-	bottom: 100%;
+	bottom: calc(100% - 1px);
 	left: 0;
     right: 0;
     width: 100%;
@@ -2160,7 +2160,7 @@ html[dir="ltr"] .forget-password-link{
 	background-image: url(../images/shape.png);
 	transform: scaleX(-1);
 	position: absolute;
-	bottom: 100%;
+	bottom: calc(100% - 1px);
 	left: 0;
     right: 0;
     width: 100%;
