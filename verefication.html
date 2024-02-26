@@ -157,7 +157,7 @@
                 </li>
                
                 <li class="language-anchor ">
-                  <a href="register-en.html">English</a>
+                  <a href="verefication-en.html">English</a>
                 </li>
               </ul>
             
@@ -314,7 +314,7 @@
                     </li>
                
                 <li class="language-anchor ">
-                  <a href="register-en.html">English</a>
+                  <a href="verefication-en.html">English</a>
                 </li>
               </ul>
             
@@ -379,94 +379,46 @@
 
    
     <!-- about-section -->
-    <div class="about-us-section">
+    <div class="about-us-section height-auto">
       <div class="container">
-        <div class="careers-section">
-          <h2 class="sign-in-title">
-          لديك حساب بالفعل؟
-          <a href="sign-in.html" class="register-link">
-            سجل دخول الآن
-           </a>
+        <div class="careers-section verefication-section">
+          <h2 class="sign-in-title w-480">
+          ادخل كود التحقق المرسل في رسالة نصية إلى رقم جوالك المسجل لتتمكن من استكمال عملية التسجيل
+          
           </h2>
-          <div class="careers-form-section">
+          <div class="careers-form-section ">
             <form class="careers-form">
-              <label class="form-label required">
-                الإسم بالكامل
-              </label>
-              <input type="text" class="form-input" >
-              <label class="form-label required">
-              النوع
-              </label>
-              <div class="checkbox-section ">
-                <div class="radio-button-block checkbox-block">
-                   <div class=" radio-check">
-                      <input type="radio"   id="boy" name="ristrict" value="ذكر" checked>
-                      <label class="radio-btn-label" for="boy"> ذكر</label>
-                   </div>
-                </div>
-                <div class="radio-button-block checkbox-block">
-                   <div class=" radio-check">
-                      <input type="radio"  id="girl"  name="ristrict" value="أنثى">
-                      <label class="radio-btn-label" for="girl"> أنثى</label>
-                   </div>
-                </div>
-             </div>
-             <label class="form-label required">
-              العمر
-              </label>
-              <input type="text" class="form-input" >
-              <label class="form-label required">
-               العنوان
-                </label>
-                <input type="text" class="form-input">
-                <label class="form-label required">
-                  رقم الهوية
-                   </label>
-                   <input type="number" class="form-input" >
-                <label class="form-label required">
-                 رقم الجوال
-                  </label>
-                  <input type="number" class="form-input" >
-                  <label class="form-label required">
-                    البريد الإلكتروني
-                    </label>
-                    <input type="email" class="form-input" >
-                    <label class="form-label required">
-                    كلمة المرور
-                       </label>
-                       <div class="password-block">
-                        <input type="password" class="form-input"  id="pass">
-                        <a onclick="togglePassword()">
-                          <i class="fa-regular fa-eye-slash  password-icon" id="eye-slash" ></i>
-                          <i class=" fa-regular fa-eye password-icon" id="eye" ></i>
-                         
-                          </a>
-                       
-                       </div>
-                       
-                       <label class="form-label required">
-                       تأكيد كلمة المرور
-                         </label>
-                         <div class="password-block">
-                          <input type="password" class="form-input"  id="pass2">
-                          <a onclick="togglePassword2()">
-                            <i class="fa-regular fa-eye-slash  password-icon" id="eye-slash2" ></i>
-                            <i class=" fa-regular fa-eye password-icon" id="eye2" ></i>
-                           
-                            </a>
-                         
-                         </div>
+              <div class="verefecation-list">
+               
+                  <input type="text" class="inputs verefication-input " maxlength="1">
+               
+               
+                  <input type="text" class="inputs verefication-input " maxlength="1">
+               
+                  <input type="text" class="inputs verefication-input " maxlength="1">
+               
+                  <input type="text" class="inputs verefication-input " maxlength="1">
+               
+              </div>
+              <span class="timee">
+                02:59
+              </span>
+             
+              <h2 class="sign-in-title">
+               لم تصلك الرسالة؟
+                <a href="#" class="register-link resend">
+                 إعادة الإرسال
+                 </a>
+                </h2>
+           
+               
+               
+                  
+                     
                         
-                         <div class="checkbox">
-                          <input type="checkbox" class="input-radio-btn" id="remember" name="remember" value="">
-                          <label for="remember" class="remember-me"> لقد قرأت وأوافق على 
-                            <a href="terms-conditions.html" class="register-link">
-                              الشروط والأحكام
-                             </a>
-                          </label>
-                       </div>
-                           <a href="verefication.html" type="submit" class="submit-btn sign-in-btn">
-                                 تسجيل
+                        
+                           <a href="sign-in-success.html" type="submit" class="submit-btn confirm-btn">
+                                تأكيد
                            </a>
             </form>
           </div>
@@ -570,40 +522,6 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-      function togglePassword() {
-       
-    var x = document.getElementById("pass");
-    var eyeSlash = document.getElementById("eye-slash");
-    var eye = document.getElementById("eye");
-    if (x.type === "password") {
-      x.type = "text";
-      eyeSlash.style.display="none";
-      eye.style.display="block";
-
-    } else {
-      x.type = "password";
-      eyeSlash.style.display="block";
-      eye.style.display="none";
-    }
-  }
-
-  function togglePassword2() {
-       
-       var xx = document.getElementById("pass2");
-       var eyeSlashh = document.getElementById("eye-slash2");
-       var eyee = document.getElementById("eye2");
-       if (xx.type === "password") {
-         xx.type = "text";
-         eyeSlashh.style.display="none";
-         eyee.style.display="block";
-   
-       } else {
-         xx.type = "password";
-         eyeSlashh.style.display="block";
-         eyee.style.display="none";
-       }
-     }
-      </script>
+  
   </body>
 </html>
