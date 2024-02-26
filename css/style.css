@@ -533,7 +533,9 @@ html[dir="ltr"] .first-level-link:after {
 	position: relative;
 	text-decoration: none;
 	border-radius: 22px;
-	background-color: var(--main-color);
+	background-image: -moz-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
 	color: #fff;
 	font-size: 14px;
 	font-family: "IBMPlexSansArabic-SemiBold";
@@ -569,8 +571,10 @@ html[dir="ltr"] .first-level-link:after {
 	height: 44px;
   } */
   .consultation-link:hover {
-	color: var(--main-color);
-	background-color: #fff;
+	color: #fff;
+	background-image: -moz-linear-gradient( 0deg, rgb(21,79,112) 100% , rgb(12,111,159) 0%) ;
+	background-image: -webkit-linear-gradient( 0deg, rgb(21,79,112) 100% , rgb(12,111,159) 0%);
+	background-image: -ms-linear-gradient(0deg, rgb(75, 102, 117) 100% , rgb(12,111,159) 0%);
   }
   .consultation-link:hover:after{
 	background-color: #fff;
@@ -1328,7 +1332,7 @@ background-color: #eef4f8;
 	color: #fff;
 }
 .careers-section{
-	padding: 70px 0 102px;
+	padding: 70px 0 155px;
 }
 .careers-title{
 	color: var(--main-hover);
