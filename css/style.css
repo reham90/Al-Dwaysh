@@ -1033,6 +1033,8 @@ background-color: #eef4f8;
 .service-img{
 	width: 100%;
 	transition: 0.5s;
+	aspect-ratio: 1/1;
+	object-fit: fill;
 }
 .service-block:hover .service-img{
 	transform: scale(1.2);
@@ -1970,9 +1972,71 @@ html[dir="ltr"] .date{
 	margin-bottom: 10px;
 }
 .w-848{
-	width: 848px;
-	max-width: max-content;
+	width: 848px ;
+	max-width: 848px;
 }
+.payments-table{
+	width: 100%;
+	margin-bottom: 24px;
+}
+.payments-table tr:not(:last-child){
+	margin-bottom: 3px;
+}
+.payments-table .thead{
+	border-radius: 10px;
+	background-image: -moz-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
+	height: 60px;
+	display: grid;
+    width: 100%;
+    justify-content: space-between;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+.table-row{
+	background-color: #fff;
+	background-image: none !important;
+}
+.payments-table .thead th{
+	color: #fff;
+	font-size: 14px;
+	font-family: "IBMPlexSansArabic-SemiBold";
+	padding-inline-start: 28px;
+}
+.payments-pagination{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.table-row td{
+	font-size: 14px;
+	color: rgb(8, 34, 57);
+	padding-inline-start: 28px;
+	white-space: nowrap;
+}
+.table-row td img{
+	margin-inline-start: 5px;
+}
+.download-btn{
+	background-color: transparent;
+	border: 0;
+	outline: none;
+	color: rgb(128, 128, 128); 
+	font-size: 14px;
+	text-decoration: underline;
+	transition: 0.5s;
+	padding: 0;
+}
+.download-btn:hover{
+	color: var(--main-color);
+}
+.download-btn:focus{
+	outline: none;
+	border: 0;
+}
+
+
 .notification-date{
 	display: flex;
 	text-align: start;
@@ -2439,8 +2503,26 @@ html[dir="ltr"] .success-img{
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+.pay-table{
+	width: 100%;
+	overflow-x: scroll;
+}
+.payments-table .thead th{
+	padding-inline-start: 20px;
+	padding-inline-end: 20px;
+}
+.table-row td{
+	padding-inline-start: 20px;	
+	padding-inline-end: 20px;
+}
+.payments-pagination{
+	margin-top: 50px;
+}
 .w-480{
 	width: 100%;
+}
+.payments-table .thead{
+	display: inherit;
 }
 
 .footer:before{
@@ -3035,6 +3117,25 @@ html[dir="ltr"] .services-menu {
 		z-index: 99;
 		width: 992px;
 	}
+	.payments-table{
+		overflow-x: scroll;
+	}
+	.payments-table .thead{
+display: inherit;
+
+	}
+	.pay-table{
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.payments-table .thead th{
+		padding-inline-start: 20px;
+		padding-inline-end: 20px;
+	}
+	.table-row td{
+		padding-inline-start: 20px;
+		padding-inline-end: 20px;
+	}
 	html[dir="ltr"] .order-labels{
 		margin-inline-end: 30px;
 	}
@@ -3453,6 +3554,9 @@ html[dir="ltr"] .services-menu {
 @media only screen and (max-width: 994px) and (min-width: 768px) {
 	.about-us-content{
 		min-height: auto;
+	}
+	.pay-table {
+		width: 452px;
 	}
 	.edit-account-section{
 		flex-wrap: nowrap;
