@@ -1046,7 +1046,12 @@ background-color: #eef4f8;
 	margin: 0 0 25px;
 	text-align: center;
 }
-
+.language-anchor .dropdown-content a{
+	color: var(--main-hover);
+}
+.language-anchor .dropdown-content a:hover{
+	color: var(--main-color);
+}
 
 /* services-section */
 
@@ -2502,6 +2507,17 @@ html[dir="ltr"] .success-img{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+.language-anchor .guest-link{
+	display: flex !important;
+	font-size: 16px;
+}
+.language-anchor .dropbtn{
+	justify-content: flex-start;
+}
+.language-anchor .dropdown-content{
+	transform: translateX(0%);
+	inset-inline-start: 0;
 }
 .pay-table{
 	width: 100%;
