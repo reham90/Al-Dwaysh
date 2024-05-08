@@ -2360,7 +2360,9 @@ html[dir="rtl"] .iti__country-list{
 	border-bottom: 0;
 }
 
-  
+  html[dir="rtl"] .flatpickr-calendar.open{
+	left:47% !important
+  }
 
 /* footer */
 .footer {
