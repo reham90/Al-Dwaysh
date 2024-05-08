@@ -2192,6 +2192,16 @@ html[dir="ltr"] .forget-password-link{
 html[dir="rtl"] .iti__country-list{
 	inset-inline-end: 0 !important;
 }
+.flag-div{
+	width: 20px;
+    height: 20px;
+    display: flex;
+    flex-shrink: 0;
+    margin-inline-end: 5px;
+}
+.flag-div img{
+	width: 100%;
+}
 .password-block a{
 	position: absolute;
 	top:50%;
