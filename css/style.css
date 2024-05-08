@@ -106,7 +106,7 @@ html[dir="ltr"] .progress-bar {
 	font: var(--fa-font-regular);
     content: "\f107";
 	font-size: 10px;
-	
+	margin-inline-start: 4px;
 }
 
 /*top header*/
@@ -603,6 +603,12 @@ html[dir="ltr"] .first-level-link:after {
   }
   .iti--separate-dial-code .iti__selected-flag{
 	background-color: transparent !important;
+	direction: ltr;
+	border-radius: 50%;
+	padding-inline-start: 20px ;
+  }
+  .iti{
+	margin-bottom: 17px;
   }
   .whatsapp-btn {
 	width: 50px;

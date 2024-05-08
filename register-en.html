@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Othman bin Ahmed Al-Dawish Company/register</title>
     <link rel="icon" href="images/fav.png" type="image/png" />
-    
+     <!--  Flatpicker Styles  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -407,6 +409,10 @@
                 </div>
              </div>
              <label class="form-label required">
+             birth date
+               </label>
+               <input type="text" class="form-input" id="basicDate" placeholder="   enter your birth date please" data-input>
+             <label class="form-label required">
               age
               </label>
               <input type="text" class="form-input" >
@@ -603,6 +609,15 @@
        }
      }
       </script>
+        <!--  Flatpickr  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/22.0.2/js/intlTelInput.min.js"></script>
+  <script>
+    $("#basicDate").flatpickr({
+  enableTime: true,
+  dateFormat: "F, d Y H:i"
+});
+     </script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
@@ -614,5 +629,6 @@
      utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
    });
        </script>
+  
   </body>
 </html>
