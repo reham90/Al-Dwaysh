@@ -421,7 +421,7 @@
                 <label class="form-label required">
                  mobile number
                   </label>
-                  <input type="number" class="form-input" >
+                  <input type="number" name="phone_number[main]" id="phone_number" class="form-input" >
                   <label class="form-label required">
                    email address
                     </label>
@@ -603,5 +603,16 @@
        }
      }
       </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+       <script>
+         var phone_number = window.intlTelInput(document.querySelector("#phone_number"), {
+     separateDialCode: true,
+     preferredCountries:["in"],
+     hiddenInput: "full",
+     utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+   });
+       </script>
   </body>
 </html>
