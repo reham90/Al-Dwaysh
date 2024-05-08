@@ -1407,7 +1407,7 @@ background-color: #eef4f8;
 	color: #fff;
 }
 .careers-section{
-	padding: 70px 0 155px;
+	padding: 70px 0 115px;
 }
 .careers-title{
 	color: var(--main-hover);
@@ -2364,7 +2364,7 @@ html[dir="rtl"] .iti__country-list{
 
 /* footer */
 .footer {
-	
+	margin-top: 90px;
 	position: relative;
 	background-color: #082239;
 	background-image: url(../images/footer-bg.png);
