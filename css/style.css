@@ -1022,7 +1022,7 @@ background-color: #eef4f8;
 	position: relative;
 	overflow: hidden;
 	width: 362px;
-	height: 362px;
+    height: 260px;
 }
 .service-block-cover{
 	position: absolute;
@@ -1049,7 +1049,7 @@ background-color: #eef4f8;
 .service-img{
 	width: 100%;
 	transition: 0.5s;
-	aspect-ratio: 1/1;
+	height: 100%;
 	object-fit: fill;
 }
 .service-block:hover .service-img{
