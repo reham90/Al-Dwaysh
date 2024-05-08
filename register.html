@@ -8,7 +8,9 @@
     <link rel="icon" href="images/fav.png" type="image/png" />
     
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-   
+   <!--  Flatpicker Styles  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/fonts.css" />
@@ -412,6 +414,10 @@
                 </div>
              </div>
              <label class="form-label required">
+             تاريخ الميلاد
+              </label>
+              <input type="text" class="form-input" id="basicDate" placeholder="ادخل التاريخ من فضلك" data-input>
+             <label class="form-label required">
               العمر
               </label>
               <input type="text" class="form-input" >
@@ -566,6 +572,8 @@
     </a>
     <!-- arrow to top -->
     <script src="js/jquery-3.4.1.min.js"></script>
+       <!--  Flatpickr  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
@@ -604,6 +612,11 @@
          eyee.style.display="none";
        }
      }
+     $("#basicDate").flatpickr({
+    enableTime: true,
+    dateFormat: "F, d Y H:i"
+});
       </script>
+    
   </body>
 </html>

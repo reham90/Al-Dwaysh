@@ -106,7 +106,7 @@ html[dir="ltr"] .progress-bar {
 	font: var(--fa-font-regular);
     content: "\f107";
 	font-size: 10px;
-	margin-inline-start: 4px;
+	
 }
 
 /*top header*/
@@ -143,7 +143,7 @@ header {
 .nav-header {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0 22px;
+	padding: 10px 0;
 	transition: all 0.3s ease-in-out;
 	align-items: center;
 	position: relative;
@@ -152,7 +152,7 @@ header {
   
 .big-menu li a {
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
 text-decoration: none;
@@ -484,8 +484,7 @@ html[dir="ltr"] .first-level-link:after {
 }
 
 .logo {
-	max-width: 216px;
-	max-height: 54px;
+	height: 75px;
 	transition: all 0.3s ease-in-out;
 }
 .terms-section{
@@ -537,7 +536,7 @@ html[dir="ltr"] .first-level-link:after {
 	background-image: -webkit-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
 	background-image: -ms-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: "IBMPlexSansArabic-SemiBold";
 	padding: 0 30px;
 	height: 42px;
@@ -596,6 +595,12 @@ html[dir="ltr"] .first-level-link:after {
 	  opacity: 0;
 	}
   }
+  .text-danger{
+	width: 100%;
+    max-width: 504px;
+    display: block;
+    margin-bottom: 10px;
+  }
   .whatsapp-btn {
 	width: 50px;
 	height: 50px;
@@ -612,6 +617,12 @@ html[dir="ltr"] .first-level-link:after {
 	z-index: 9999;
 	bottom: 10px;
 	inset-inline-start: 10px;
+  }
+  .whatsapp-btn a{
+	width: 28px;
+    height: 28px;
+    display: flex;
+    text-decoration: none;
   }
   .whatsapp-btn::after {
 	display: flex;
@@ -1007,6 +1018,8 @@ background-color: #eef4f8;
 .service-block{
 	position: relative;
 	overflow: hidden;
+	width: 362px;
+	height: 362px;
 }
 .service-block-cover{
 	position: absolute;
@@ -2510,7 +2523,8 @@ html[dir="ltr"] .success-img{
 }
 .language-anchor .guest-link{
 	display: flex !important;
-	font-size: 16px;
+	font-size: 14px;
+	margin-inline-end: 16px;
 }
 .language-anchor .dropbtn{
 	justify-content: flex-start;
@@ -2893,7 +2907,7 @@ html[dir="ltr"] .services-menu {
 	font-size: 40px;
 }
 	.logo {
-		max-width: 160px;
+		height: auto;
 	}
 
 	.main-slider-image {
