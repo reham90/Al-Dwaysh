@@ -412,7 +412,7 @@ html[dir="ltr"] .services-menu{
     content: "\f107";
 	font-size: 10px;
     position: absolute;
-    inset-inline-end: 8px;
+	inset-inline-start: 106%;
     top: 8px;
 }
 .services-menu li{
@@ -523,6 +523,14 @@ html[dir="ltr"] .first-level-link:after {
 	margin-inline-end: 20px;
 	display: flex;
 	align-items: center;
+}
+.language-anchor .guest-link{
+	margin-inline-end: 0;
+	position: relative;
+}
+.guest-ask-section .language-anchor{
+	margin-inline-end: 30px;
+	
 }
 .guest-link:hover{
 	color: #fff;
