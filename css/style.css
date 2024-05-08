@@ -3629,11 +3629,20 @@ display: inherit;
 
 	.hidden-large .consultation-link {
 		position: absolute;
-		top:25px;
-		inset-inline-start: 20px;
-		margin: 0;
+		position: sticky;
+        margin: 0;
+        z-index: 1;
+        margin-top: 200px;
 	}
-
+.guest-ask-section .language-anchor{
+	display: none;
+}
+.navgition .language-anchor{
+	margin-inline-end: 0;
+    top: 27px;
+    inset-inline-start: 12px;
+	
+}
 	.big-menu .language-anchor:hover {
 		color: var(--main-hover);
 	}
