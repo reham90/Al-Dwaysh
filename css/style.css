@@ -1024,11 +1024,23 @@ background-color: #eef4f8;
 	grid-template-columns: repeat(3,1fr);
 	grid-gap: 30px;
 }
+.services-grid a{
+	width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 1;
+}
 .service-block{
 	position: relative;
-	overflow: hidden;
-	width: 362px;
-    height: 260px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 362px;
+    height: 100%;
+    max-height: 362px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .service-block-cover{
 	position: absolute;
@@ -1054,9 +1066,11 @@ background-color: #eef4f8;
 }
 .service-img{
 	width: 100%;
-	transition: 0.5s;
-	height: 100%;
-	object-fit: fill;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    transition: 0.5s;
 }
 .service-block:hover .service-img{
 	transform: scale(1.2);
