@@ -2509,7 +2509,7 @@ html[dir="ltr"] .success-img{
 
 
 
-@media (min-width: 1180px) {
+@media (min-width: 1280px) {
 	.nav-wrap {
 		display: flex;
 		flex-direction: column;
@@ -2602,7 +2602,7 @@ html[dir="ltr"] .success-img{
 /* footer */
 /* media query */
 /* menu in phone size */
-@media (max-width: 1180px) {
+@media (max-width: 1280px) {
 	.language-anchor .guest-link:after{
 		inset-inline-end: 2px;
 	}
@@ -3363,7 +3363,7 @@ display: inherit;
 	}
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1280px) {
 	body {
 		position: relative;
 	}
@@ -3670,7 +3670,7 @@ display: inherit;
 	}
 
 }
-@media only screen and (max-width: 1180px) and (min-width: 992px) {
+@media only screen and (max-width: 1280px) and (min-width: 992px) {
 	.guest-ask-section .language-anchor {
         display: flex;
     }

@@ -6,7 +6,7 @@ $(document).ready(function() {
   new WOW().init();
 
   //phone size menu onclick
-  if ($(window).width() <= 1180) {
+  if ($(window).width() <= 1280) {
       $("#menu-id").click(function(e) {
           e.preventDefault();
           $('.menu-bars .bar').toggleClass('hide-icon');
@@ -32,7 +32,7 @@ $(document).ready(function() {
          e.preventDefault(e);
           $(this).siblings(".sub-menu ").slideToggle(400);
         //   $(".menu-item-has-children a").not(this).siblings(".sub-menu ").slideUp(400);
-          if ($(window).width() <= 1180) {
+          if ($(window).width() <= 1280) {
            
               $(this).toggleClass("active");
               $(".menu-item-has-children a").not(this).removeClass("active");
