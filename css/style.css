@@ -2099,6 +2099,7 @@ html[dir="ltr"] .date{
 	font-size: 14px;
 	font-family: "IBMPlexSansArabic-SemiBold";
 	width: 100px;
+	max-width: 100px;
     padding: 10px 20px;
 }
 .payments-pagination{
@@ -2110,6 +2111,7 @@ html[dir="ltr"] .date{
 	font-size: 14px;
 	color: rgb(8, 34, 57);
 	width: 100px;
+	max-width: 100px;
     padding: 10px 20px;
 }
 .table-row td img{
