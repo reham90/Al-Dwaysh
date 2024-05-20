@@ -523,6 +523,7 @@ html[dir="ltr"] .first-level-link:after {
 	margin-inline-end: 20px;
 	display: flex;
 	align-items: center;
+	white-space: nowrap;
 }
 .language-anchor .guest-link{
 	margin-inline-end: 0;
@@ -1299,7 +1300,7 @@ background-color: #eef4f8;
 	flex-direction: column;
 	display: flex;
 	align-items: center;
-	margin-top: 97px;
+	margin-top: 94px;
 	padding: 48px 0 100px;
   }
   .breadcrumb-head {
@@ -2082,11 +2083,12 @@ html[dir="ltr"] .date{
 	background-image: -webkit-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
 	background-image: -ms-linear-gradient( 0deg, rgb(12,111,159) 0%, rgb(21,79,112) 100%);
 	height: 60px;
-	display: grid;
+	display: table;
     width: 100%;
-    justify-content: space-between;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
+   
+}
+.pay-table{
+	width: 100%;
 }
 .table-row{
 	background-color: #fff;
@@ -2096,7 +2098,8 @@ html[dir="ltr"] .date{
 	color: #fff;
 	font-size: 14px;
 	font-family: "IBMPlexSansArabic-SemiBold";
-	padding-inline-start: 28px;
+	width: 100px;
+    padding: 10px 20px;
 }
 .payments-pagination{
 	display: flex;
@@ -2106,8 +2109,8 @@ html[dir="ltr"] .date{
 .table-row td{
 	font-size: 14px;
 	color: rgb(8, 34, 57);
-	padding-inline-start: 28px;
-	white-space: nowrap;
+	width: 100px;
+    padding: 10px 20px;
 }
 .table-row td img{
 	margin-inline-start: 5px;
@@ -2504,7 +2507,7 @@ html[dir="ltr"] .success-img{
 
 
 
-@media (min-width: 991px) {
+@media (min-width: 1180px) {
 	.nav-wrap {
 		display: flex;
 		flex-direction: column;
@@ -2597,7 +2600,7 @@ html[dir="ltr"] .success-img{
 /* footer */
 /* media query */
 /* menu in phone size */
-@media (max-width: 991px) {
+@media (max-width: 1180px) {
 	.language-anchor .guest-link:after{
 		inset-inline-end: 2px;
 	}
@@ -2631,14 +2634,7 @@ html[dir="ltr"] .success-img{
 	width: 100%;
 	overflow-x: scroll;
 }
-.payments-table .thead th{
-	padding-inline-start: 20px;
-	padding-inline-end: 20px;
-}
-.table-row td{
-	padding-inline-start: 20px;	
-	padding-inline-end: 20px;
-}
+
 .payments-pagination{
 	margin-top: 50px;
 }
@@ -3315,9 +3311,7 @@ display: inherit;
 	html[dir="ltr"] .consultation-link {
 		margin-inline-start: 10px;
 	}
-	html[dir="ltr"] .services-menu{
-		transform: translateX(-39%) !important;
-	}
+	
 	html[dir="ltr"] .services-menu li{
 		max-width: 230px;
 		
@@ -3367,7 +3361,7 @@ display: inherit;
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1180px) {
 	body {
 		position: relative;
 	}
@@ -3674,6 +3668,19 @@ display: inherit;
 	}
 
 }
+@media only screen and (max-width: 1180px) and (min-width: 992px) {
+	.guest-ask-section .language-anchor {
+        display: flex;
+    }
+	.services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+	.footer-nav-bar {
+       
+        flex-direction: row;
+    }
+}
 
 @media (min-width: 992px) {
 	.menu-item-has-children:hover .sub-menu {
@@ -3686,13 +3693,24 @@ display: inherit;
 		width: 181px !important;
 	}
 }
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.services-grid{
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 15px;
+	}
 
-@media only screen and (max-width: 994px) and (min-width: 768px) {
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
 	.about-us-content{
 		min-height: auto;
 	}
 	.pay-table {
 		width: 452px;
+	}
+	.navgition{
+	    width: 100%;
+    justify-content: center;
 	}
 	.edit-account-section{
 		flex-wrap: nowrap;
@@ -3730,9 +3748,7 @@ display: inherit;
 	.guest-ask-section{
 		display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    margin-inline-end: 20px;
+   
 	}
 	.contact-us-section{
 		flex-wrap: nowrap;
@@ -3740,10 +3756,7 @@ display: inherit;
 	.contact-us-form{
 		margin-top: 0;
 	}
-	.services-grid{
-		grid-template-columns: repeat(2,1fr);
-		grid-gap: 15px;
-	}
+	
 	.inner-page .counter-section{
 		margin-bottom: 50px;
 	}
@@ -3804,7 +3817,7 @@ display: inherit;
 
 }
 
-@media only screen and (max-width: 1280px) and (min-width:1199px) {
+/* @media only screen and (max-width: 1280px) and (min-width:1199px) {
 	
 	.menu-item-has-children:hover .sub-menu{
 		width: 1140px;
@@ -3813,4 +3826,11 @@ display: inherit;
 		display: none;
 	}
 	
+} */
+
+@media only screen and (max-width: 1400px) and (min-width: 1280px) {
+	.services-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-gap: 15px;
+    }
 }
