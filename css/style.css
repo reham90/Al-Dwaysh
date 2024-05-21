@@ -3722,7 +3722,12 @@ display: inherit;
 	.about-us-content{
 		min-height: auto;
 	}
-	
+	.table-row td{
+		padding: 5px;
+	}
+	.payments-table .thead th{
+		padding: 5px;
+	}
 	.order-details{
 	flex-wrap: wrap;
 	}
