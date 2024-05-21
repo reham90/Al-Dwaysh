@@ -2879,9 +2879,7 @@ html[dir="ltr"] .forget-password-link{
 .breadcrumb {
 	display: none;
 }
-.breadcrumb-section {
-	margin-top: 55px;
-}
+
 .breadcrumb-head {
 	font-size: 24px;
 	margin: 0;
@@ -3025,7 +3023,7 @@ html[dir="ltr"] .services-menu {
 	}
 
 	.footer .big-menu{
-		width: 100%;
+	
    
 	margin-bottom: 30px;
 	}
@@ -3045,7 +3043,7 @@ html[dir="ltr"] .services-menu {
 	  }
 	  .footer .big-menu{
 		text-align: center;
-		gap:10px;
+		gap:30px;
 	  }
 	.copy-rights {
 
@@ -3379,7 +3377,7 @@ display: inherit;
 	
 
 	.for-user{
-		margin-inline-end: 20px;
+		margin-inline-end: 10px;
 	}
 	.dropdown-content{
 		top: calc(100% + 29px);
