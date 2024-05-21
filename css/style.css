@@ -2606,6 +2606,9 @@ html[dir="ltr"] .success-img{
 	.language-anchor .guest-link:after{
 		inset-inline-end: 2px;
 	}
+	.password-block{
+		width: 100%;
+	}
 .main-slider .swiper-pagination {
 	position: relative;
 	width: 100%;
@@ -2644,7 +2647,7 @@ html[dir="ltr"] .success-img{
 	width: 100%;
 }
 .payments-table .thead{
-	display: inherit;
+	display: table;
 }
 
 .footer:before{
@@ -2684,7 +2687,7 @@ html[dir="ltr"] .success-img{
 	width: 100%;
 }
 .order-details{
-	flex-wrap: wrap;
+	gap:15px;
 }
 .w-555{
 	width: 100% !important;
@@ -3719,8 +3722,9 @@ display: inherit;
 	.about-us-content{
 		min-height: auto;
 	}
-	.pay-table {
-		width: 452px;
+	
+	.order-details{
+	flex-wrap: wrap;
 	}
 	.navgition{
 	    width: 100%;
@@ -3729,9 +3733,7 @@ display: inherit;
 	.edit-account-section{
 		flex-wrap: nowrap;
 	}
-	.w-848{
-		width: 555px;
-	}
+	
 	.case-brief {
 		width: 250px;
 	}
@@ -3745,13 +3747,16 @@ display: inherit;
 	}
 	.pay-details{
 		margin: 0 !important;
-		height: 100%;
+		height: max-content;
 	}
 	.my-account-list{
 		display: block;
-		width: 262px;
+		width: 370px;
 		margin-inline-end: 30px;
 		overflow-x: hidden;
+	}
+	.password-block{
+		width: 100%;
 	}
 	.name{
 		position: relative;
