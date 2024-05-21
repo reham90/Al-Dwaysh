@@ -2813,7 +2813,7 @@ html[dir="ltr"] .forget-password-link{
 }
 .terms-conditions-section{
 	padding: 0 0 50px;
-	flex-wrap: wrap;
+	gap:30px;
 }
 .terms-conditions-titles{
 	display: none;
@@ -3679,6 +3679,13 @@ display: inherit;
        
         flex-direction: row;
     }
+	.partners-grid{
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.terms-conditions-titles{
+		display: flex;
+		height: max-content;
+	}
 }
 @media only screen and (max-width: 994px) and (min-width: 360px) {
 	.footer .big-menu{
@@ -3687,6 +3694,7 @@ display: inherit;
 	.footer .big-menu li{
 		margin-bottom: 15px;
 	}
+	
 }
 @media (min-width: 992px) {
 	.menu-item-has-children:hover .sub-menu {
