@@ -2609,6 +2609,9 @@ html[dir="ltr"] .success-img{
 	.password-block{
 		width: 100%;
 	}
+	.main-caption{
+     width: 100%;
+	}
 .main-slider .swiper-pagination {
 	position: relative;
 	width: 100%;
