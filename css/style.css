@@ -1098,12 +1098,8 @@ background-color: #eef4f8;
     margin: 0;
 }
 .service-block-cover{
-	position: absolute;
-	top:0;
-	bottom: 0;
-	right: 0;
-	left:0;
-	background-color: rgba(8, 34, 57, 0.4);
+	
+	
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
@@ -1130,11 +1126,19 @@ background-color: #eef4f8;
 	transform: scale(1.2);
 }
 .service-title{
-	color: #fff;
+	color: var(--main-hover);
 	font-size: 18px;
+	text-decoration: none;
 	font-family: "IBMPlexSansArabic-Bold";
-	margin: 0 0 25px;
+	margin: 15px 0 25px;
 	text-align: center;
+	transition: 0.5s;
+}
+.services-grid a{
+	text-decoration: none;
+}
+.services-grid a:hover .service-title{
+	color: var(--main-color);
 }
 .language-anchor .dropdown-content a{
 	color: var(--main-hover);
