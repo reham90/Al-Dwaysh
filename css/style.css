@@ -1720,6 +1720,12 @@ input[type=number] {
 	display: inline-block;
 	width: auto;
 }
+.order-block .order-answer{
+	width: 130px;
+}
+.file-txt{
+	display:none;
+}
 .order-status{
 	display: flex;
 	align-items: baseline;
